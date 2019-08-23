@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on ブログ的な何か</title>
+    <link>http://ta08.github.io/tags/blog/</link>
+    <description>Recent content in blog on ブログ的な何か</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 20 Aug 2019 00:16:48 +0900</lastBuildDate>
+    
+	<atom:link href="http://ta08.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugoでブログ作成</title>
+      <link>http://ta08.github.io/posts/first-post/</link>
+      <pubDate>Tue, 20 Aug 2019 00:16:48 +0900</pubDate>
+      
+      <guid>http://ta08.github.io/posts/first-post/</guid>
+      <description>要点 Hugoで静的サイトを作成し、Github Pagesで公開した。
+はじめに Github Pagesでサイトを公開する一覧の流れを経験してみたかった。
+またGithubアカウントに紐付いたサイトとなるため、「ポートフォリオ」「ポートフォリオ＋ブログ」「ブログ」にするか悩んでおり、テーマの変更で簡単に後から切り替えられ、変更コストが低そうなツールを用いてサイトを構築したかった。
+そこでGithubのリポジトリでstatic-site-generatorタグがついたものから、目ぼしいものに軽く目を通し、聞き馴染みもあったHugoを選択した。
+Hugoと好みのテーマでブログを作成し、Github Pagesで公開することにした。
+静的サイトジェネレーター Githubのリポジトリでstatic-site-generatorタグがついており、Documentサイト用ではなく汎用的な目ぼしいものを比較した。(2019年8月20日時点)
+   &amp;ldquo;owner&amp;rdquo; &amp;ldquo;name&amp;rdquo; &amp;ldquo;star&amp;rdquo; &amp;ldquo;created_at&amp;rdquo; &amp;ldquo;updated_at&amp;rdquo; &amp;ldquo;license&amp;rdquo; &amp;ldquo;url&amp;rdquo; &amp;ldquo;description&amp;rdquo;     &amp;ldquo;jekyll&amp;rdquo; &amp;ldquo;jekyll&amp;rdquo; 38443 &amp;ldquo;2008-10-20T06:29:03Z&amp;rdquo; &amp;ldquo;2019-08-20T07:18:59Z&amp;rdquo; &amp;ldquo;MIT License&amp;rdquo; &amp;ldquo;https://github.com/jekyll/jekyll&amp;quot; &amp;ldquo;🌐 Jekyll is a blog-aware static site generator in Ruby&amp;rdquo;   &amp;ldquo;gohugoio&amp;rdquo; &amp;ldquo;hugo&amp;rdquo; 37488 &amp;ldquo;2013-07-04T15:26:26Z&amp;rdquo; &amp;ldquo;2019-08-20T08:29:02Z&amp;rdquo; &amp;ldquo;Apache License 2.0&amp;rdquo; &amp;ldquo;https://github.com/gohugoio/hugo&amp;quot; &amp;ldquo;The world’s fastest framework for building websites.&amp;rdquo;   &amp;ldquo;gatsbyjs&amp;rdquo; &amp;ldquo;gatsby&amp;rdquo; 37346 &amp;ldquo;2015-05-21T22:43:05Z&amp;rdquo; &amp;ldquo;2019-08-20T08:18:17Z&amp;rdquo; &amp;ldquo;MIT License&amp;rdquo; &amp;ldquo;https://github.</description>
+    </item>
+    
+  </channel>
+</rss>

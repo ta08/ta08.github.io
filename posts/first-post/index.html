@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<title>
+	Hugoでブログ作成
+</title>
+		<style>
+	body, body.pushable {
+		background-repeat: no-repeat;
+	  	background-attachment: fixed;
+	  	background-size: cover !important;
+	}
+</style>
+
+		<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+	
+	
+	
+	<meta name="author" content="ta08" />
+	<meta name="description" content="要点 Hugoで静的サイトを作成し、Github Pagesで公開した。
+はじめに Github Pagesでサイトを公開する一覧の流れを経験してみたかった。
+またGithubアカウントに紐付いたサイトとなるため、「ポートフォリオ」「ポートフォリオ＋ブログ」「ブログ」にするか悩んでおり、テーマの変更で簡単に後から切り替えられ、変更コストが低そうなツールを用いてサイトを構築したかった。
+そこでGithubのリポジトリでstatic-site-generatorタグがついたものから、目ぼしいものに軽く目を通し、聞き馴染みもあったHugoを選択した。
+Hugoと好みのテーマでブログを作成し、Github Pagesで公開することにした。
+静的サイトジェネレーター Githubのリポジトリでstatic-site-generatorタグがついており、Documentサイト用ではなく汎用的な目ぼしいものを比較した。(2019年8月20日時点)
+   &amp;ldquo;owner&amp;rdquo; &amp;ldquo;name&amp;rdquo; &amp;ldquo;star&amp;rdquo; &amp;ldquo;created_at&amp;rdquo; &amp;ldquo;updated_at&amp;rdquo; &amp;ldquo;license&amp;rdquo; &amp;ldquo;url&amp;rdquo; &amp;ldquo;description&amp;rdquo;     &amp;ldquo;jekyll&amp;rdquo; &amp;ldquo;jekyll&amp;rdquo; 38443 &amp;ldquo;2008-10-20T06:29:03Z&amp;rdquo; &amp;ldquo;2019-08-20T07:18:59Z&amp;rdquo; &amp;ldquo;MIT License&amp;rdquo; &amp;ldquo;https://github.com/jekyll/jekyll&amp;quot; &amp;ldquo;🌐 Jekyll is a blog-aware static site generator in Ruby&amp;rdquo;   &amp;ldquo;gohugoio&amp;rdquo; &amp;ldquo;hugo&amp;rdquo; 37488 &amp;ldquo;2013-07-04T15:26:26Z&amp;rdquo; &amp;ldquo;2019-08-20T08:29:02Z&amp;rdquo; &amp;ldquo;Apache License 2.0&amp;rdquo; &amp;ldquo;https://github.com/gohugoio/hugo&amp;quot; &amp;ldquo;The world’s fastest framework for building websites.&amp;rdquo;   &amp;ldquo;gatsbyjs&amp;rdquo; &amp;ldquo;gatsby&amp;rdquo; 37346 &amp;ldquo;2015-05-21T22:43:05Z&amp;rdquo; &amp;ldquo;2019-08-20T08:18:17Z&amp;rdquo; &amp;ldquo;MIT License&amp;rdquo; &amp;ldquo;https://github." />
+
+
+
+<meta name="generator" content="Hugo 0.57.2" />
+
+
+<link rel="shortcut icon" href="/img/defaultFav.ico">
+
+
+
+
+		
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+
+ <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Inconsolata" rel="stylesheet">
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/site.css">
+
+
+
+
+
+
+
+
+<style>
+	body.pushable {
+		display: block;
+		
+			background-image: var(--bgImage) !important;
+		 ;
+	}
+</style>
+
+
+
+<script>
+	
+	var isMobile = ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+	console.log("The client device is a "+(isMobile?"mobile":"PC")+".")
+</script>
+
+	</head>
+
+	<body>
+		<script>
+var prevBgIndex = 0;
+var bodyBgSwitchIndex = 0;
+
+
+
+
+
+
+	
+		document.body.style.backgroundColor = "#5EBABA";
+	
+
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  var random;
+  while (1) {
+    random = Math.floor(Math.random() * (max - min)) + min;
+    if (random !== prevBgIndex) {
+      prevBgIndex = random;
+      break;
+    }
+  }
+  return random;
+}
+</script>
+
+
+
+	<div class="blur-overlay"></div>
+
+
+		<div id="sidebar" class="ui sidebar inverted vertical menu">
+	
+	<section id="author" class="ui top attached center aligned inverted segment">
+		
+<div class="ui small circular image">
+	
+		<img src="https://avatars1.githubusercontent.com/u/16427109?s=400&amp;v=4">
+	
+</div>
+
+
+<h3 class="ui header">
+	ta08
+	<div class="sub header">I&#39;m looking for a way to make the world more effective and effective.</div>
+</h3>
+
+	</section>
+
+	
+	
+		<section class="ui attached center aligned inverted segment sidebar-dream-tags">
+			
+			
+			
+			
+
+
+
+
+	
+	
+		
+			
+			<a class="ui label violet " href="/tags/blog" title="blog">blog</a>
+		
+			
+			<a class="ui label purple " href="/tags/deploy" title="deploy">deploy</a>
+		
+			
+			<a class="ui label brown " href="/tags/hugo" title="hugo">hugo</a>
+		
+	
+
+
+		</section>
+	
+
+	
+	
+		<section class="ui attached inverted segment sidebar-dream-categories both flexbox">
+			<div class="ui inverted accordion">
+				
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/tech">tech</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="http://ta08.github.io/posts/first-post/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>Hugoでブログ作成</p>
+				</div>
+			</a>
+		
+	</div>
+
+
+			</div>
+		</section>
+	
+
+	
+	<section id="footer" class="ui bottom attached center aligned inverted segment">
+		
+
+	<p>© 2019 ブログ的な何か</p>
+
+
+<p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with <a href="https://github.com/UtkarshVerma/hugo-dream-plus" target="_blank">Dream Plus</a> theme.</p>
+
+	</section>
+</div>
+
+
+		<div class="pusher">
+			<div class="flipper">
+				<div class="front">
+					
+	<nav class="ui top secondary menu bar">
+	
+	<div class="item">
+		<i class="inverted big link bullseye icon dream-flip-toggle" title="About Me"></i>
+	</div>
+
+	
+	
+		<div class="item">
+			<a href="/">
+				<i class="inverted big link home icon" title="Home"></i>
+			</a>
+		</div>
+	
+
+	
+	
+
+	
+	
+		<div class="item">
+			<a href="/tags">
+				<i class="inverted big link tags icon" title="All Tags"></i>
+			</a>
+		</div>
+	
+
+	
+	
+		<div class="item">
+			<a href="/categories">
+				<i class="inverted big link cubes icon" title="All Categories"></i>
+			</a>
+    	</div>
+	
+
+	
+	
+
+	
+	
+		<div class="ui container tablet computer only grid">
+			<div class="item" onClick="$('.ui.sidebar').sidebar('setting', 'transition', 'overlay').sidebar('toggle');">
+				<i class="inverted big link sidebar icon" title="Show Sidebar"></i>
+			</div>
+		</div>
+	
+
+	
+	
+		<div class="item right">
+			<a href="/posts/index.xml">
+				<i class="inverted big link rss icon" title="RSS Feed"></i>
+			</a>
+		</div>
+	
+</nav>
+
+
+	<div class="ui centered grid">
+		
+		<div class="sixteen wide mobile only column">
+				<div class="ui inverted accordion">
+	<div id="header" class="ui inverted segment column box">		
+		
+		<header id="author" class="ui top attached center aligned inverted segment">
+			
+<div class="ui small circular image">
+	
+		<img src="https://avatars1.githubusercontent.com/u/16427109?s=400&amp;v=4">
+	
+</div>
+
+
+<h3 class="ui header">
+	ta08
+	<div class="sub header">I&#39;m looking for a way to make the world more effective and effective.</div>
+</h3>
+
+		</header>
+
+		
+		<div class=" title header-title">
+			
+				<div id="tag-category-pop" class="ui red right corner label">
+					<i class="hand point icon down" title="Show/hide tags and categories"></i>
+				</div>
+			
+		</div>
+		
+		
+		<div id="tag-category" class=" content">
+			
+				<section class="ui attached center aligned inverted segment dream-tags none flexbox">
+					
+					
+					
+
+
+
+
+	
+	
+		
+			
+			<a class="ui label green " href="/tags/blog" title="blog">blog</a>
+		
+			
+			<a class="ui label orange " href="/tags/deploy" title="deploy">deploy</a>
+		
+			
+			<a class="ui label pink " href="/tags/hugo" title="hugo">hugo</a>
+		
+	
+
+
+				</section>
+			
+
+			
+				<section class="ui attached inverted segment dream-categories both flexbox">
+					<div class="inverted accordion">
+						
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/tech">tech</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="http://ta08.github.io/posts/first-post/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>Hugoでブログ作成</p>
+				</div>
+			</a>
+		
+	</div>
+
+
+					</div>
+				</section>
+			
+		</div>
+
+		
+		<footer class="ui bottom attached center aligned inverted segment">
+			
+
+	<p>© 2019 ブログ的な何か</p>
+
+
+<p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with <a href="https://github.com/UtkarshVerma/hugo-dream-plus" target="_blank">Dream Plus</a> theme.</p>
+
+		</footer>
+	</div>
+</div>
+
+		</div>
+
+		<div class="sixteen wide mobile fifteen wide tablet twelve wide computer column post-list">
+			
+			<section class="ui secondary top attached black segment post-head">
+				<h1 class="post-title">
+					Hugoでブログ作成
+				</h1>
+
+				<div class="sub header">
+					<div><span><i class="calendar outline icon"></i>Aug 20, 2019</span></div>
+					
+					<div><span class="disqusComment"><i class="comment outline icon"></i><a href="http://ta08.github.io/posts/first-post/#disqus_thread" class="disqus-comment-count" data-disqus-identifier="38114d4d9d0cd1ef39d3c152fa4e9488"></a></span></div>
+					<div><span><i class="clock outline icon"></i>1 min read</span></div>
+					<div><span><i class="angle double up icon"></i>Last updated on Aug 20, 2019</span></div>
+				</div>
+				<hr>
+
+				
+					<div class="toc">
+						<nav id="TableOfContents">
+<ul>
+<li><a href="#要点">要点</a></li>
+<li><a href="#はじめに">はじめに</a>
+<ul>
+<li><a href="#静的サイトジェネレーター">静的サイトジェネレーター</a></li>
+</ul></li>
+<li><a href="#やり方">やり方</a>
+<ul>
+<li><a href="#サイト作成">サイト作成</a></li>
+<li><a href="#テーマ改造">テーマ改造</a></li>
+</ul></li>
+<li><a href="#おわりに">おわりに</a></li>
+</ul>
+</nav>
+					</div>
+				
+
+				<article class="post-content twemoji">
+					
+
+<h1 id="要点">要点&nbsp;<a class="anchor" href="#要点"><i class="small linkify icon"></i></a> </h1>
+
+<hr />
+
+<p>Hugoで静的サイトを作成し、Github Pagesで公開した。</p>
+
+<p><img src="/images/20190823T17-1.png" alt="localhostでの表示" /></p>
+
+<h1 id="はじめに">はじめに&nbsp;<a class="anchor" href="#はじめに"><i class="small linkify icon"></i></a> </h1>
+
+<hr />
+
+<p>Github Pagesでサイトを公開する一覧の流れを経験してみたかった。</p>
+
+<p>またGithubアカウントに紐付いたサイトとなるため、「ポートフォリオ」「ポートフォリオ＋ブログ」「ブログ」にするか悩んでおり、テーマの変更で簡単に後から切り替えられ、変更コストが低そうなツールを用いてサイトを構築したかった。</p>
+
+<p>そこでGithubのリポジトリで<code>static-site-generator</code>タグがついたものから、目ぼしいものに軽く目を通し、聞き馴染みもあったHugoを選択した。</p>
+
+<p>Hugoと好みのテーマでブログを作成し、Github Pagesで公開することにした。</p>
+
+<h2 id="静的サイトジェネレーター">静的サイトジェネレーター&nbsp;<a class="anchor" href="#静的サイトジェネレーター"><i class="small linkify icon"></i></a> </h2>
+
+<hr />
+
+<p>Githubのリポジトリで<code>static-site-generator</code>タグがついており、Documentサイト用ではなく汎用的な目ぼしいものを比較した。(2019年8月20日時点)</p>
+
+<table>
+<thead>
+<tr>
+<th>&ldquo;owner&rdquo;</th>
+<th>&ldquo;name&rdquo;</th>
+<th>&ldquo;star&rdquo;</th>
+<th>&ldquo;created_at&rdquo;</th>
+<th>&ldquo;updated_at&rdquo;</th>
+<th>&ldquo;license&rdquo;</th>
+<th>&ldquo;url&rdquo;</th>
+<th>&ldquo;description&rdquo;</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>&ldquo;jekyll&rdquo;</td>
+<td>&ldquo;jekyll&rdquo;</td>
+<td>38443</td>
+<td>&ldquo;2008-10-20T06:29:03Z&rdquo;</td>
+<td>&ldquo;2019-08-20T07:18:59Z&rdquo;</td>
+<td>&ldquo;MIT License&rdquo;</td>
+<td>&ldquo;<a href="https://github.com/jekyll/jekyll&quot;">https://github.com/jekyll/jekyll&quot;</a></td>
+<td>&ldquo;🌐 Jekyll is a blog-aware static site generator in Ruby&rdquo;</td>
+</tr>
+
+<tr>
+<td>&ldquo;gohugoio&rdquo;</td>
+<td>&ldquo;hugo&rdquo;</td>
+<td>37488</td>
+<td>&ldquo;2013-07-04T15:26:26Z&rdquo;</td>
+<td>&ldquo;2019-08-20T08:29:02Z&rdquo;</td>
+<td>&ldquo;Apache License 2.0&rdquo;</td>
+<td>&ldquo;<a href="https://github.com/gohugoio/hugo&quot;">https://github.com/gohugoio/hugo&quot;</a></td>
+<td>&ldquo;The world’s fastest framework for building websites.&rdquo;</td>
+</tr>
+
+<tr>
+<td>&ldquo;gatsbyjs&rdquo;</td>
+<td>&ldquo;gatsby&rdquo;</td>
+<td>37346</td>
+<td>&ldquo;2015-05-21T22:43:05Z&rdquo;</td>
+<td>&ldquo;2019-08-20T08:18:17Z&rdquo;</td>
+<td>&ldquo;MIT License&rdquo;</td>
+<td>&ldquo;<a href="https://github.com/gatsbyjs/gatsby&quot;">https://github.com/gatsbyjs/gatsby&quot;</a></td>
+<td>&ldquo;Build blazing fast, modern apps and websites with React&rdquo;</td>
+</tr>
+
+<tr>
+<td>&ldquo;hexojs&rdquo;</td>
+<td>&ldquo;hexo&rdquo;</td>
+<td>27700</td>
+<td>&ldquo;2012-09-23T15:17:08Z&rdquo;</td>
+<td>&ldquo;2019-08-20T07:48:37Z&rdquo;</td>
+<td>&ldquo;MIT License&rdquo;</td>
+<td>&ldquo;<a href="https://github.com/hexojs/hexo&quot;">https://github.com/hexojs/hexo&quot;</a></td>
+<td>&ldquo;A fast, simple &amp; powerful blog framework, powered by Node.js.&rdquo;</td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="やり方">やり方&nbsp;<a class="anchor" href="#やり方"><i class="small linkify icon"></i></a> </h1>
+
+<hr />
+
+<h2 id="サイト作成">サイト作成&nbsp;<a class="anchor" href="#サイト作成"><i class="small linkify icon"></i></a> </h2>
+
+<p>下記を参考にすると、Hugoを利用し好きなthemeと共にサイトを構築が出来る。</p>
+
+<ul>
+<li>Build Site
+
+<ul>
+<li><a href="https://gohugo.io/getting-started/quick-start/">https://gohugo.io/getting-started/quick-start/</a></li>
+</ul></li>
+<li>Theme (for me)
+
+<ul>
+<li><a href="https://github.com/UtkarshVerma/hugo-dream-plus">https://github.com/UtkarshVerma/hugo-dream-plus</a></li>
+</ul></li>
+</ul>
+
+<p>またGithub Pagesに公開する方法は下記が有用。</p>
+
+<ul>
+<li>Deploy
+
+<ul>
+<li><a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">https://gohugo.io/hosting-and-deployment/hosting-on-github/</a></li>
+</ul></li>
+</ul>
+
+<h2 id="テーマ改造">テーマ改造&nbsp;<a class="anchor" href="#テーマ改造"><i class="small linkify icon"></i></a> </h2>
+
+<p>themeは見た目的に好みでだったdream-plusを利用したが、設定変更だけでは対応できない事があった。
+1つ目はリンク可能な外部サービスの種類拡張。
+gistやamazonのiconが存在しなかったため、コードを書き換える必要があった。</p>
+
+<p>2つ目は記事新規作成時のテンプレートの修正。こちらはthemeのarchtypesではなく、プロジェクトのarchtypes/default.mdを読み込ませるようにしても解決しそうではあった。
+ただしヘッダーのメタ情報の設定はthemeに依存するので、新規作成時にメタ情報はthemeのテンプレートを利用、本文はプロジェクトのテンプレートを利用といった柔軟なことが出来なさそうだったので、themeのテンプレートを書き換えたかった。</p>
+
+<p>上記の問題を解決したかったため、Materialsの内容では製作者のリポジトリをSubmoduleとして登録していたが、リポジトリをフォークしてそれをSubmodule化し、修正することにした。</p>
+
+<ul>
+<li><a href="https://github.com/ta08/hugo-dream-plus/tree/fc64d64fbfbc49a664ff59135398a407057b182d">https://github.com/ta08/hugo-dream-plus/tree/fc64d64fbfbc49a664ff59135398a407057b182d</a></li>
+<li><a href="https://github.com/ta08/hugo-dream-plus/tree/d9aec6c6f11b1bb4dae4e06b5ed05580f1c316bf">https://github.com/ta08/hugo-dream-plus/tree/d9aec6c6f11b1bb4dae4e06b5ed05580f1c316bf</a></li>
+</ul>
+
+<h1 id="おわりに">おわりに&nbsp;<a class="anchor" href="#おわりに"><i class="small linkify icon"></i></a> </h1>
+
+<hr />
+
+<p>Hugoを利用して静的サイトの公開を行った。初めてHugoを利用してみたものの、導入コストが非常に低く簡単にサイトの公開を行うことが出来た。やった！</p>
+
+<p>まだ使用し始めて間もないため使用感があまりないが、ブログ用途の場合はMarkdownで記事を記述するため、既に登録されたタグやカテゴリーの補完が効かないので表記揺れが心配。</p>
+
+				</article>				
+			</section>
+
+			
+			<section class="ui secondary attached segment dream-tags">
+				
+					
+
+
+
+
+	
+		<a class="ui label olive " href="/tags/hugo" title="Hugo">Hugo</a>
+	
+		<a class="ui label pink " href="/tags/deploy" title="deploy">deploy</a>
+	
+		<a class="ui label blue " href="/tags/blog" title="blog">blog</a>
+	
+
+
+				
+			</section>
+
+			
+			
+				<section class="ui secondary  attached segment share row box">
+					
+
+
+
+
+
+
+
+
+<div class="author">
+	
+	<img class="avatar" src="https://avatars1.githubusercontent.com/u/16427109?s=400&amp;v=4">
+	
+</div>
+<div class="info grow flexbox">
+	
+	<p class="name">ta08</p>
+	
+	<p class="desc">I&#39;m looking for a way to make the world more effective and effective.</p>
+</div>
+
+
+<section class="buttons row box">
+	<div class="facebook none flexbox" href="#" onclick="window.open(
+			'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+			'facebook-share-dialog',
+			'width=626,height=436'); return false;">
+		<button class="ui facebook button"><i class="facebook icon"></i>Share</button>
+	</div>
+	<div class="twitter none flexbox" onclick="window.open('https://twitter.com/intent/tweet?text=Read &quot;Hugoでブログ作成  http:\/\/ta08.github.io\/posts\/first-post\/','_self')">
+		<button class="ui twitter button"><i class="twitter icon"></i>Tweet</button>
+	</div>
+</section>
+
+				</section>
+			
+
+			
+			
+			
+
+			
+			
+				<div class="ui secondary bottom attached stacked segment disqus">
+					
+<div id="disqus_thread"></div>
+<script>
+	var disqus_config = function () {
+		this.page.url = 'http:\/\/ta08.github.io\/posts\/first-post\/';
+		this.page.identifier = '38114d4d9d0cd1ef39d3c152fa4e9488';
+	};
+	(function() {
+   	var d = document, s = d.createElement('script');
+   	s.src = 'https://' + 'dream-plus' + '.disqus.com/embed.js';
+   	s.setAttribute('data-timestamp', +new Date());
+   	(d.head || d.body).appendChild(s);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+				</div>
+			
+		</div>
+	</div>
+
+				</div>
+				<div class="back">
+					
+<nav class="ui top secondary menu bar">
+	<div class="item">
+		<i class="inverted big link bullseye icon dream-flip-toggle" title="About Me"></i>
+	</div>
+	
+		
+	
+		
+	
+
+	
+	
+	
+	
+	
+	
+	
+		
+		
+			<div class="item">
+				<a href="https://github.com/ta08" target="	_blank">
+					<i id="ico" class="inverted big link github icon" title="GitHub"></i>
+				</a>
+			</div>
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+			<div class="item">
+				<a href="https://gist.github.com/ta08" target="	_blank">
+					<i id="ico" class="inverted big link github alternate icon" title="gist"></i>
+				</a>
+			</div>
+		
+	
+		
+		
+	
+</nav>
+
+
+
+<div class="ui centered grid about">
+	<div class="sixteen wide mobile fifteen wide tablet fifteen wide computer column about">
+		<section class="ui stacked segments">
+			<div class="ui inverted segment">
+				<article class="twemoji">
+					<h1 id="about-me">about me</h1>
+
+<p>to do
+				</article>
+			</div>
+		</section>
+	</div>
+</div>
+
+				</div>
+			</div>
+		</div>
+		
+	
+	
+		<script id="dsq-count-scr" src="//dream-plus.disqus.com/count.js" async></script>
+	
+
+		
+
+<script src="/js/site.js"></script>
+
+
+
+	<script src="https://twemoji.maxcdn.com/2/twemoji.min.js?2.6"></script>
+
+
+
+
+
+
+
+
+
+		
+
+
+		
+
+	<script>
+		(function () {
+		  console.log("Twemoji up and making stuff colourful!");
+		  for (var b = document.getElementsByClassName("twemoji"), a = 0; a < b.length; a++) {
+			twemoji.parse(b[a]);
+		  }
+		})();
+	</script>
+
+
+	</body>
+</html>
