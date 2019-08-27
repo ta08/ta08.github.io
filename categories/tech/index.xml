@@ -6,10 +6,30 @@
     <description>Recent content in tech on ブログ的な何か</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 20 Aug 2019 00:16:48 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 23 Aug 2019 23:49:01 +0900</lastBuildDate>
     
 	<atom:link href="http://ta08.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>自宅ネットワークの不調を可視化</title>
+      <link>http://ta08.github.io/posts/20190823t23/</link>
+      <pubDate>Fri, 23 Aug 2019 23:49:01 +0900</pubDate>
+      
+      <guid>http://ta08.github.io/posts/20190823t23/</guid>
+      <description>要点 自宅ネットワークのネットワークが不調だったため、ログ収集を行い、Elasticsearchにログを蓄積し、Grafanaで可視化しました。
+下記の画像が完成したダッシュボードです。
+Grafana、Kibana初心者がそれぞれを使用した所感は以下のとおりです。
+ とりあえず可視化してみたい！グラフをイジるのは面倒でただ表示だけしたい！  KibanaでもGrafanaでも差はあまりないです。  とりあえず可視化してみたい！グラフに情報が書き込まれてないと気になるからある程度は作り込みたい！  Grafanaのほうが良かったです。  ElasticsearchのフィールドをGUIから書き換えたいならば、Kibanaを併用すればいいのかなと感じました。    はじめに 自宅の回線会社とルーター変更してからネットワークが不調でインタネットに一時的に接続出来なくなったりした。最初はあまり気にせずにWifiの手動ON、OFFで直していましたが、意外と不調が発生するために徐々に不満が溜まりました。回線速度は良かったものの、安定してインターネットに接続出来ないのは辛いものがあります。だんだんと新しい回線環境がどの程度の品質なのか知りたくなりました。
+というわけで回線状態を取り敢えず可視化することにしました。
+ログ系の時系列データを可視化というと、Elasticsearch、Grafana、Kibanaがあります。それぞれ使用経験がなかったものの、今回使用してみることにしました。3つの役割は同一ではなく、Elasticsearchはデータストア、可視化のダッシュボードを担うのがGrafana、Kibanaとなります。
+Grafanaは汎用的に作られており、Elasticsearchに限らず、様々なデータソースに対して可視化することが出来ます。その点KibanaはElasticsearchのみにしか対応していません。今回の可視化のデータソースは1種類なので、Grafanaの汎用性はそこまで優位点にはなりませんので、逆にKibanaの方がElasticsearchに特化していて使いやすいのでは？というのが最初の印象でした。 またKibanaはElastic Stackに同梱されているため、そもそも公式としてKibana推しです。
+可視化の文脈でlogstashやfluentdなどのデータ収集ソフトウェアが登場しますが今回は使用していません。スクリプトを書いてログ収集を行いました。
+よってデータの流れのイメージは下記のようになります。
+ コマンドで定期的にネットワーク状態を調べる =&amp;gt; jsonに整形する =&amp;gt; Elasticsearchに保存 =&amp;gt; Grafanaで可視化
+ 今回の記事ではElasticsearch、Grafana、Kibanaに対し初心者視点からサクッと利用する上で使用感がどうだったかの所感を書き留めます。
+versions  elasticsearch  6.8.2  grafana  6.3.3  kibana  6.8.2   Githubのリポジトリ情報    owner name star star/day created_at updated_at license language description url     elastic elasticsearch 43599 12.</description>
+    </item>
     
     <item>
       <title>Hugoでブログ作成</title>

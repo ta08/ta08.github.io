@@ -6,10 +6,55 @@
     <description>Recent content in Tags on ブログ的な何か</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 20 Aug 2019 00:16:48 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 23 Aug 2019 23:49:01 +0900</lastBuildDate>
     
 	<atom:link href="http://ta08.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Elasticsearch</title>
+      <link>http://ta08.github.io/tags/elasticsearch/</link>
+      <pubDate>Fri, 23 Aug 2019 23:49:01 +0900</pubDate>
+      
+      <guid>http://ta08.github.io/tags/elasticsearch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grafana</title>
+      <link>http://ta08.github.io/tags/grafana/</link>
+      <pubDate>Fri, 23 Aug 2019 23:49:01 +0900</pubDate>
+      
+      <guid>http://ta08.github.io/tags/grafana/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kibana</title>
+      <link>http://ta08.github.io/tags/kibana/</link>
+      <pubDate>Fri, 23 Aug 2019 23:49:01 +0900</pubDate>
+      
+      <guid>http://ta08.github.io/tags/kibana/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Network</title>
+      <link>http://ta08.github.io/tags/network/</link>
+      <pubDate>Fri, 23 Aug 2019 23:49:01 +0900</pubDate>
+      
+      <guid>http://ta08.github.io/tags/network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visualization</title>
+      <link>http://ta08.github.io/tags/visualization/</link>
+      <pubDate>Fri, 23 Aug 2019 23:49:01 +0900</pubDate>
+      
+      <guid>http://ta08.github.io/tags/visualization/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>blog</title>
