@@ -5,10 +5,19 @@
     <description>Recent content in Posts on ブログ的な何か</description>
     <meta name="generator" content="Hugo 0.57.2" />
     <language>ja</language>
-    <lastBuildDate>Fri, 23 Aug 2019 23:49:01 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 27 Aug 2019 21:09:55 +0900</lastBuildDate>
     
         <atom:link href="http://ta08.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Processingでビジュアルアート</title>
+      <link>http://ta08.github.io/posts/20190827t21/</link>
+      <pubDate>Tue, 27 Aug 2019 21:09:55 +0900</pubDate>
+      
+      <guid>http://ta08.github.io/posts/20190827t21/</guid>
+      <description>要点 Processingというプログラミング言語で遊んでみました。ビジュアルアートを行うためのプログラミング言語で統合開発環境も同梱されてい</description>
+    </item>
     
     <item>
       <title>自宅ネットワークの不調を可視化</title>
@@ -16,18 +25,7 @@
       <pubDate>Fri, 23 Aug 2019 23:49:01 +0900</pubDate>
       
       <guid>http://ta08.github.io/posts/20190823t23/</guid>
-      <description>要点 自宅ネットワークのネットワークが不調だったため、ログ収集を行い、Elasticsearchにログを蓄積し、Grafanaで可視化しました。
-下記の画像が完成したダッシュボードです。
-Grafana、Kibana初心者がそれぞれを使用した所感は以下のとおりです。
- とりあえず可視化してみたい！グラフをイジるのは面倒でただ表示だけしたい！  KibanaでもGrafanaでも差はあまりないです。  とりあえず可視化してみたい！グラフに情報が書き込まれてないと気になるからある程度は作り込みたい！  Grafanaのほうが良かったです。  ElasticsearchのフィールドをGUIから書き換えたいならば、Kibanaを併用すればいいのかなと感じました。    はじめに 自宅の回線会社とルーター変更してからネットワークが不調でインタネットに一時的に接続出来なくなったりした。最初はあまり気にせずにWifiの手動ON、OFFで直していましたが、意外と不調が発生するために徐々に不満が溜まりました。回線速度は良かったものの、安定してインターネットに接続出来ないのは辛いものがあります。だんだんと新しい回線環境がどの程度の品質なのか知りたくなりました。
-というわけで回線状態を取り敢えず可視化することにしました。
-ログ系の時系列データを可視化というと、Elasticsearch、Grafana、Kibanaがあります。それぞれ使用経験がなかったものの、今回使用してみることにしました。3つの役割は同一ではなく、Elasticsearchはデータストア、可視化のダッシュボードを担うのがGrafana、Kibanaとなります。
-Grafanaは汎用的に作られており、Elasticsearchに限らず、様々なデータソースに対して可視化することが出来ます。その点KibanaはElasticsearchのみにしか対応していません。今回の可視化のデータソースは1種類なので、Grafanaの汎用性はそこまで優位点にはなりませんので、逆にKibanaの方がElasticsearchに特化していて使いやすいのでは？というのが最初の印象でした。 またKibanaはElastic Stackに同梱されているため、そもそも公式としてKibana推しです。
-可視化の文脈でlogstashやfluentdなどのデータ収集ソフトウェアが登場しますが今回は使用していません。スクリプトを書いてログ収集を行いました。
-よってデータの流れのイメージは下記のようになります。
- コマンドで定期的にネットワーク状態を調べる =&amp;gt; jsonに整形する =&amp;gt; Elasticsearchに保存 =&amp;gt; Grafanaで可視化
- 今回の記事ではElasticsearch、Grafana、Kibanaに対し初心者視点からサクッと利用する上で使用感がどうだったかの所感を書き留めます。
-versions  elasticsearch  6.8.2  grafana  6.3.3  kibana  6.8.2   Githubのリポジトリ情報    owner name star star/day created_at updated_at license language description url     elastic elasticsearch 43599 12.</description>
+      <description>要点 自宅ネットワークのネットワークが不調だったため、ログ収集を行い、Elasticsearchにログを蓄積し、Grafanaで可視化しました</description>
     </item>
     
     <item>
@@ -36,13 +34,7 @@ versions  elasticsearch  6.8.2  grafana  6.3.3  kibana  6.8.2   Githubのリポ�
       <pubDate>Tue, 20 Aug 2019 00:16:48 +0900</pubDate>
       
       <guid>http://ta08.github.io/posts/first-post/</guid>
-      <description>要点 Hugoで静的サイトを作成し、Github Pagesで公開した。
-はじめに Github Pagesでサイトを公開する一覧の流れを経験してみたかった。
-またGithubアカウントに紐付いたサイトとなるため、「ポートフォリオ」「ポートフォリオ＋ブログ」「ブログ」にするか悩んでおり、テーマの変更で簡単に後から切り替えられ、変更コストが低そうなツールを用いてサイトを構築したかった。
-そこでGithubのリポジトリでstatic-site-generatorタグがついたものから、目ぼしいものに軽く目を通し、聞き馴染みもあったHugoを選択した。
-Hugoと好みのテーマでブログを作成し、Github Pagesで公開することにした。
-静的サイトジェネレーター Githubのリポジトリでstatic-site-generatorタグがついており、Documentサイト用ではなく汎用的な目ぼしいものを比較した。(2019年8月20日時点)
-   &amp;ldquo;owner&amp;rdquo; &amp;ldquo;name&amp;rdquo; &amp;ldquo;star&amp;rdquo; &amp;ldquo;created_at&amp;rdquo; &amp;ldquo;updated_at&amp;rdquo; &amp;ldquo;license&amp;rdquo; &amp;ldquo;url&amp;rdquo; &amp;ldquo;description&amp;rdquo;     &amp;ldquo;jekyll&amp;rdquo; &amp;ldquo;jekyll&amp;rdquo; 38443 &amp;ldquo;2008-10-20T06:29:03Z&amp;rdquo; &amp;ldquo;2019-08-20T07:18:59Z&amp;rdquo; &amp;ldquo;MIT License&amp;rdquo; &amp;ldquo;https://github.com/jekyll/jekyll&amp;quot; &amp;ldquo;🌐 Jekyll is a blog-aware static site generator in Ruby&amp;rdquo;   &amp;ldquo;gohugoio&amp;rdquo; &amp;ldquo;hugo&amp;rdquo; 37488 &amp;ldquo;2013-07-04T15:26:26Z&amp;rdquo; &amp;ldquo;2019-08-20T08:29:02Z&amp;rdquo; &amp;ldquo;Apache License 2.0&amp;rdquo; &amp;ldquo;https://github.com/gohugoio/hugo&amp;quot; &amp;ldquo;The world’s fastest framework for building websites.&amp;rdquo;   &amp;ldquo;gatsbyjs&amp;rdquo; &amp;ldquo;gatsby&amp;rdquo; 37346 &amp;ldquo;2015-05-21T22:43:05Z&amp;rdquo; &amp;ldquo;2019-08-20T08:18:17Z&amp;rdquo; &amp;ldquo;MIT License&amp;rdquo; &amp;ldquo;https://github.</description>
+      <description>要点 Hugoで静的サイトを作成し、Github Pagesで公開した。 はじめに Github Pagesでサイトを公開する一覧の流れを経験してみたかった。 ま</description>
     </item>
     
   </channel>

@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<title>
+	Processingでビジュアルアート
+</title>
+		<style>
+	body, body.pushable {
+		background-repeat: no-repeat;
+	  	background-attachment: fixed;
+	  	background-size: cover !important;
+	}
+</style>
+
+		<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+	
+	
+	
+	<meta name="author" content="ta08" />
+	<meta name="description" content="要点 Processingというプログラミング言語で遊んでみました。ビジュアルアートを行うためのプログラミング言語で統合開発環境も同梱されてい" />
+
+
+
+<meta name="generator" content="Hugo 0.57.2" />
+
+
+<link rel="shortcut icon" href="/img/defaultFav.ico">
+
+
+
+
+		
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+
+ <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Inconsolata" rel="stylesheet">
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/site.css">
+
+
+
+
+
+
+
+
+<style>
+	body.pushable {
+		display: block;
+		
+			background-image: var(--bgImage) !important;
+		 ;
+	}
+</style>
+
+
+
+<script>
+	
+	var isMobile = ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+	console.log("The client device is a "+(isMobile?"mobile":"PC")+".")
+</script>
+
+	</head>
+
+	<body>
+		<script>
+var prevBgIndex = 0;
+var bodyBgSwitchIndex = 0;
+
+
+
+
+
+
+	
+		document.body.style.backgroundColor = "#5EBABA";
+	
+
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  var random;
+  while (1) {
+    random = Math.floor(Math.random() * (max - min)) + min;
+    if (random !== prevBgIndex) {
+      prevBgIndex = random;
+      break;
+    }
+  }
+  return random;
+}
+</script>
+
+
+
+	<div class="blur-overlay"></div>
+
+
+		<div id="sidebar" class="ui sidebar inverted vertical menu">
+	
+	<section id="author" class="ui top attached center aligned inverted segment">
+		
+<div class="ui small circular image">
+	
+		<img src="https://avatars1.githubusercontent.com/u/16427109?s=400&amp;v=4">
+	
+</div>
+
+
+<h3 class="ui header">
+	ta08
+	<div class="sub header">I&#39;m looking for a way to make the world more effective and effective.</div>
+</h3>
+
+	</section>
+
+	
+	
+		<section class="ui attached center aligned inverted segment sidebar-dream-tags">
+			
+			
+			
+			
+
+
+
+
+	
+	
+		
+			
+			<a class="ui label violet " href="/tags/blog" title="blog">blog</a>
+		
+			
+			<a class="ui label orange " href="/tags/canvas" title="canvas">canvas</a>
+		
+			
+			<a class="ui label red " href="/tags/deploy" title="deploy">deploy</a>
+		
+			
+			<a class="ui label olive " href="/tags/elasticsearch" title="elasticsearch">elasticsearch</a>
+		
+			
+			<a class="ui label violet " href="/tags/grafana" title="grafana">grafana</a>
+		
+			
+			<a class="ui label orange " href="/tags/hugo" title="hugo">hugo</a>
+		
+			
+			<a class="ui label violet " href="/tags/kibana" title="kibana">kibana</a>
+		
+			
+			<a class="ui label pink " href="/tags/network" title="network">network</a>
+		
+	
+
+
+		</section>
+	
+
+	
+	
+		<section class="ui attached inverted segment sidebar-dream-categories both flexbox">
+			<div class="ui inverted accordion">
+				
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/tech">tech</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="http://ta08.github.io/posts/20190827t21/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>Processingでビジュアルアート</p>
+				</div>
+			</a>
+		
+			<a class="item" href="http://ta08.github.io/posts/20190823t23/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>自宅ネットワークの不調を可視化</p>
+				</div>
+			</a>
+		
+			<a class="item" href="http://ta08.github.io/posts/first-post/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>Hugoでブログ作成</p>
+				</div>
+			</a>
+		
+	</div>
+
+
+			</div>
+		</section>
+	
+
+	
+	<section id="footer" class="ui bottom attached center aligned inverted segment">
+		
+
+	<p>© 2019 ブログ的な何か</p>
+
+
+<p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with <a href="https://github.com/UtkarshVerma/hugo-dream-plus" target="_blank">Dream Plus</a> theme.</p>
+
+	</section>
+</div>
+
+
+		<div class="pusher">
+			<div class="flipper">
+				<div class="front">
+					
+	<nav class="ui top secondary menu bar">
+	
+	<div class="item">
+		<i class="inverted big link bullseye icon dream-flip-toggle" title="About Me"></i>
+	</div>
+
+	
+	
+		<div class="item">
+			<a href="/">
+				<i class="inverted big link home icon" title="Home"></i>
+			</a>
+		</div>
+	
+
+	
+	
+
+	
+	
+		<div class="item">
+			<a href="/tags">
+				<i class="inverted big link tags icon" title="All Tags"></i>
+			</a>
+		</div>
+	
+
+	
+	
+		<div class="item">
+			<a href="/categories">
+				<i class="inverted big link cubes icon" title="All Categories"></i>
+			</a>
+    	</div>
+	
+
+	
+	
+
+	
+	
+		<div class="ui container tablet computer only grid">
+			<div class="item" onClick="$('.ui.sidebar').sidebar('setting', 'transition', 'overlay').sidebar('toggle');">
+				<i class="inverted big link sidebar icon" title="Show Sidebar"></i>
+			</div>
+		</div>
+	
+
+	
+	
+		<div class="item right">
+			<a href="/posts/index.xml">
+				<i class="inverted big link rss icon" title="RSS Feed"></i>
+			</a>
+		</div>
+	
+</nav>
+
+
+	<div class="ui centered grid">
+		
+		<div class="sixteen wide mobile only column">
+				<div class="ui inverted accordion">
+	<div id="header" class="ui inverted segment column box">		
+		
+		<header id="author" class="ui top attached center aligned inverted segment">
+			
+<div class="ui small circular image">
+	
+		<img src="https://avatars1.githubusercontent.com/u/16427109?s=400&amp;v=4">
+	
+</div>
+
+
+<h3 class="ui header">
+	ta08
+	<div class="sub header">I&#39;m looking for a way to make the world more effective and effective.</div>
+</h3>
+
+		</header>
+
+		
+		<div class=" title header-title">
+			
+				<div id="tag-category-pop" class="ui red right corner label">
+					<i class="hand point icon down" title="Show/hide tags and categories"></i>
+				</div>
+			
+		</div>
+		
+		
+		<div id="tag-category" class=" content">
+			
+				<section class="ui attached center aligned inverted segment dream-tags none flexbox">
+					
+					
+					
+
+
+
+
+	
+	
+		
+			
+			<a class="ui label green " href="/tags/blog" title="blog">blog</a>
+		
+			
+			<a class="ui label violet " href="/tags/canvas" title="canvas">canvas</a>
+		
+			
+			<a class="ui label violet " href="/tags/deploy" title="deploy">deploy</a>
+		
+			
+			<a class="ui label blue " href="/tags/elasticsearch" title="elasticsearch">elasticsearch</a>
+		
+			
+			<a class="ui label brown " href="/tags/grafana" title="grafana">grafana</a>
+		
+			
+			<a class="ui label olive " href="/tags/hugo" title="hugo">hugo</a>
+		
+			
+			<a class="ui label blue " href="/tags/kibana" title="kibana">kibana</a>
+		
+			
+			<a class="ui label violet " href="/tags/network" title="network">network</a>
+		
+	
+
+
+				</section>
+			
+
+			
+				<section class="ui attached inverted segment dream-categories both flexbox">
+					<div class="inverted accordion">
+						
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/tech">tech</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="http://ta08.github.io/posts/20190827t21/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>Processingでビジュアルアート</p>
+				</div>
+			</a>
+		
+			<a class="item" href="http://ta08.github.io/posts/20190823t23/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>自宅ネットワークの不調を可視化</p>
+				</div>
+			</a>
+		
+			<a class="item" href="http://ta08.github.io/posts/first-post/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>Hugoでブログ作成</p>
+				</div>
+			</a>
+		
+	</div>
+
+
+					</div>
+				</section>
+			
+		</div>
+
+		
+		<footer class="ui bottom attached center aligned inverted segment">
+			
+
+	<p>© 2019 ブログ的な何か</p>
+
+
+<p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with <a href="https://github.com/UtkarshVerma/hugo-dream-plus" target="_blank">Dream Plus</a> theme.</p>
+
+		</footer>
+	</div>
+</div>
+
+		</div>
+
+		<div class="sixteen wide mobile fifteen wide tablet twelve wide computer column post-list">
+			
+			<section class="ui secondary top attached black segment post-head">
+				<h1 class="post-title">
+					Processingでビジュアルアート
+				</h1>
+
+				<div class="sub header">
+					<div><span><i class="calendar outline icon"></i>Aug 27, 2019</span></div>
+					
+					<div><span class="disqusComment"><i class="comment outline icon"></i><a href="http://ta08.github.io/posts/20190827t21/#disqus_thread" class="disqus-comment-count" data-disqus-identifier="1ba041a600d1c4a9e8a7ccf7efd625d0"></a></span></div>
+					<div><span><i class="clock outline icon"></i>5 min read</span></div>
+					<div><span><i class="angle double up icon"></i>Last updated on Aug 27, 2019</span></div>
+				</div>
+				<hr>
+
+				
+					<div class="toc">
+						<nav id="TableOfContents">
+<ul>
+<li><a href="#要点">要点</a></li>
+<li><a href="#はじめに">はじめに</a></li>
+<li><a href="#processingとは">Processingとは</a></li>
+<li><a href="#作った物とprocessingの感想">作った物とProcessingの感想</a>
+<ul>
+<li><a href="#置き場">置き場</a></li>
+<li><a href="#三角関数系曲線">三角関数系曲線</a></li>
+<li><a href="#衝突判定">衝突判定</a></li>
+</ul></li>
+<li><a href="#processing統合開発環境の雑記">Processing統合開発環境の雑記</a>
+<ul>
+<li><a href="#コード補完">コード補完</a></li>
+<li><a href="#gif作成">gif作成</a></li>
+<li><a href="#コードの再利用">コードの再利用</a></li>
+</ul></li>
+<li><a href="#おわりに">おわりに</a></li>
+</ul>
+</nav>
+					</div>
+				
+
+				<article class="post-content twemoji">
+					
+
+<h1 id="要点">要点&nbsp;<a class="anchor" href="#要点"><i class="small linkify icon"></i></a> </h1>
+
+<hr />
+
+<p>Processingというプログラミング言語で遊んでみました。ビジュアルアートを行うためのプログラミング言語で統合開発環境も同梱されていますので、簡単にビジュアルアートを作ることが出来ます。プログラミングを知らない人でも、座標計算で絵を書くことだけに集中できますので、ビジュアルアートの楽しさを味わえます。主に教育目的で面白い言語でした。</p>
+
+<h1 id="はじめに">はじめに&nbsp;<a class="anchor" href="#はじめに"><i class="small linkify icon"></i></a> </h1>
+
+<hr />
+
+<p>数学ガールの著者である結城氏がビジュアルアートを作成しているのを見かけました。また同時期に他の方もビジュアルアートをgifのような形式で公開していることに気が付きました。gifと共に投稿されていた描画に必要なコードがとても短く、どんな言語で書かれているのかとても興味を惹かれました。</p>
+
+<p>調べてみるとProcessingという言語を使っているらしく、自分も一度は触っておこうかな、という所から始まり、触ってみて実際にどうだったかを今回は記述していきます。</p>
+
+<h1 id="processingとは">Processingとは&nbsp;<a class="anchor" href="#processingとは"><i class="small linkify icon"></i></a> </h1>
+
+<hr />
+
+<p>Processingとは2001年からあるビジュアルアートの作成を簡単に行うための言語で、要は液タブなどのように鉛筆でスケッチの上に絵を書いていくのではなく、スケッチの上の座標を指定してプログラムで絵を書く言語です。</p>
+
+<p><a href="https://processing.org/">https://processing.org/</a></p>
+
+<p>例えば下記のように統合開発環境上に<code>ellipse(50, 50, 80, 40);</code>とコードを書き、実行すると楕円を描画することが出来ます。</p>
+
+<p><img src="/images/20190827T21/sc1.png" alt="Processing" /></p>
+
+<p>描画するためのコードの少なさとダウンロードして統合開発環境を開けば即コードを実行できるシンプルさが売りです。プログラミング初学者で躓きやすいポイントとして、プログラミング言語の文法とか以前にプログラミングの環境構築だったりしますので、ビジュアルビジュアルの敷居がとても低くなります。</p>
+
+<p>なおProcessingのシンタックスはJavaとPythonがありますので、経験ある方を選ぶことも出来ます。触った所感では特に差はありませんでした。</p>
+
+<h1 id="作った物とprocessingの感想">作った物とProcessingの感想&nbsp;<a class="anchor" href="#作った物とprocessingの感想"><i class="small linkify icon"></i></a> </h1>
+
+<hr />
+
+<h2 id="置き場">置き場&nbsp;<a class="anchor" href="#置き場"><i class="small linkify icon"></i></a> </h2>
+
+<p>作ったものは下記リポジトリにあげてあります。その中から部分的に抜粋します。</p>
+
+<p><a href="https://github.com/ta08/processing-playground">https://github.com/ta08/processing-playground</a></p>
+
+<h2 id="三角関数系曲線">三角関数系曲線&nbsp;<a class="anchor" href="#三角関数系曲線"><i class="small linkify icon"></i></a> </h2>
+
+<p>インボリュート曲線、アステロイド曲線、リサジュー曲線。
+それぞれの数式によって時間経過とともにどのような軌跡が描かれるか表しています。このような数式を用いてその軌跡を見る実装や、各変数を弄って図形がどのように変化するかを見る実装は統合開発環境上でも簡単に出来ます。</p>
+
+<p>教育目的などでもとても有用そうです。</p>
+
+<p><img src="/images/20190827T21/movie.gif" alt="Processing" /></p>
+
+<h2 id="衝突判定">衝突判定&nbsp;<a class="anchor" href="#衝突判定"><i class="small linkify icon"></i></a> </h2>
+
+<p>円毎のオブジェクトで衝突判定して、衝突した場合は状態を変化させています。別クラスを用意して実装し始めると途端に大変となります。というのも提供されている統合開発環境ではコード編集機能の弱さを感じたためです。</p>
+
+<p>また下記のとおり、言語自体の表現力にもつらみを感じ初めた頃合いでもありました。</p>
+
+<blockquote>
+<p>We don&rsquo;t yet support any of the Java 7 and Java 8 language features. Please help us fix this. Advanced users (loosely defined as “people who know that these features exist”) can always make use of Java 7 and 8 features from another IDE. <a href="https://github.com/processing/processing/wiki/Supported-Platforms#java-versions">https://github.com/processing/processing/wiki/Supported-Platforms#java-versions</a></p>
+</blockquote>
+
+<p>このような場合はダウンロードして直ぐ使える統合開発環境ではなく、IntelliJやVScodeでPluginを導入し開発した方が良いかもしれないです。ただそうなるとProcessingの利点である簡単に実行できるから外れてしまい、「コードを渡して遊びながら学んでもらう」などの教育目的での使用難易度が上がってしまうのかなと思いました。</p>
+
+<p><img src="/images/20190827T21/movie1.gif" alt="Processing" /></p>
+
+<h1 id="processing統合開発環境の雑記">Processing統合開発環境の雑記&nbsp;<a class="anchor" href="#processing統合開発環境の雑記"><i class="small linkify icon"></i></a> </h1>
+
+<hr />
+
+<h2 id="コード補完">コード補完&nbsp;<a class="anchor" href="#コード補完"><i class="small linkify icon"></i></a> </h2>
+
+<p>デフォルトではコードの補完機能はオフになっているため、設定を変更する必要があります。(デフォルトでオフだなんて！)</p>
+
+<h2 id="gif作成">gif作成&nbsp;<a class="anchor" href="#gif作成"><i class="small linkify icon"></i></a> </h2>
+
+<p>統合開発環境には.mov形式の動画を生成してくれる機能があります。
+gifに関しては見当たらなかったので、imagemagickを利用して作成しました。</p>
+
+<h2 id="コードの再利用">コードの再利用&nbsp;<a class="anchor" href="#コードの再利用"><i class="small linkify icon"></i></a> </h2>
+
+<p>別スケッチブックで作成したクラスや関数は【スケッチ＞ファイルを追加】で現在のスケッチブックで利用可能。ただしファイルがコピーされるため、改修方法は工夫したほうが良さそうです。</p>
+
+<h1 id="おわりに">おわりに&nbsp;<a class="anchor" href="#おわりに"><i class="small linkify icon"></i></a> </h1>
+
+<hr />
+
+<p>Processingで実際にビジュアルアートを行いました。ビジュアルアートが出来るまで敷居が低く、簡単に実装をすることも出来るので多くの人に楽しんで貰えると思います。</p>
+
+<p>その反面、ある程度技術力がある人がクラスを用意して凝ったものを作ろうとした場合は、慣れた環境でCanvas系のライブラリ、例えばpixi.jsなどを使ってやったほうがストレスフリーかなとも思いました。pixi.jsの実装方法は下記が参考になりますが、pixi.jsはtickerの概念でフレームを表現している事を留意すれば苦なく読めると思います。
+<a href="https://pixijs.io/examples/#/graphics/dynamic.js">https://pixijs.io/examples/#/graphics/dynamic.js</a></p>
+
+<p>ProcessingのコミュニティもJavascriptで開発しているp5.jsがあるみたいですし、興味が湧いたら徐々に自由度の高いものに手を出してみると面白いと思います。
+<a href="https://p5js.org/">https://p5js.org/</a></p>
+
+<p>とはいえちょっと遊びたいだけなのに、わざわざプロジェクトを作ってやるのは面倒なので、やっぱり気軽に出来るProcessingは偉大です。自作クラスとか使わない実装をすればいいんです！</p>
+
+				</article>				
+			</section>
+
+			
+			<section class="ui secondary attached segment dream-tags">
+				
+					
+
+
+
+
+	
+		<a class="ui label teal " href="/tags/processing" title="Processing">Processing</a>
+	
+		<a class="ui label red " href="/tags/canvas" title="Canvas">Canvas</a>
+	
+
+
+				
+			</section>
+
+			
+			
+				<section class="ui secondary  attached segment share row box">
+					
+
+
+
+
+
+
+
+
+<div class="author">
+	
+	<img class="avatar" src="https://avatars1.githubusercontent.com/u/16427109?s=400&amp;v=4">
+	
+</div>
+<div class="info grow flexbox">
+	
+	<p class="name">ta08</p>
+	
+	<p class="desc">I&#39;m looking for a way to make the world more effective and effective.</p>
+</div>
+
+
+<section class="buttons row box">
+	<div class="facebook none flexbox" href="#" onclick="window.open(
+			'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+			'facebook-share-dialog',
+			'width=626,height=436'); return false;">
+		<button class="ui facebook button"><i class="facebook icon"></i>Share</button>
+	</div>
+	<div class="twitter none flexbox" onclick="window.open('https://twitter.com/intent/tweet?text=Read &quot;Processingでビジュアルアート  http:\/\/ta08.github.io\/posts\/20190827t21\/','_self')">
+		<button class="ui twitter button"><i class="twitter icon"></i>Tweet</button>
+	</div>
+</section>
+
+				</section>
+			
+
+			
+			
+			
+
+			
+			
+				<div class="ui secondary bottom attached stacked segment disqus">
+					
+<div id="disqus_thread"></div>
+<script>
+	var disqus_config = function () {
+		this.page.url = 'http:\/\/ta08.github.io\/posts\/20190827t21\/';
+		this.page.identifier = '1ba041a600d1c4a9e8a7ccf7efd625d0';
+	};
+	(function() {
+   	var d = document, s = d.createElement('script');
+   	s.src = 'https://' + 'dream-plus' + '.disqus.com/embed.js';
+   	s.setAttribute('data-timestamp', +new Date());
+   	(d.head || d.body).appendChild(s);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+				</div>
+			
+		</div>
+	</div>
+
+				</div>
+				<div class="back">
+					
+<nav class="ui top secondary menu bar">
+	<div class="item">
+		<i class="inverted big link bullseye icon dream-flip-toggle" title="About Me"></i>
+	</div>
+	
+		
+	
+		
+	
+
+	
+	
+	
+	
+	
+	
+	
+		
+		
+			<div class="item">
+				<a href="https://github.com/ta08" target="	_blank">
+					<i id="ico" class="inverted big link github icon" title="GitHub"></i>
+				</a>
+			</div>
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+			<div class="item">
+				<a href="https://gist.github.com/ta08" target="	_blank">
+					<i id="ico" class="inverted big link github alternate icon" title="gist"></i>
+				</a>
+			</div>
+		
+	
+		
+		
+	
+</nav>
+
+
+
+<div class="ui centered grid about">
+	<div class="sixteen wide mobile fifteen wide tablet fifteen wide computer column about">
+		<section class="ui stacked segments">
+			<div class="ui inverted segment">
+				<article class="twemoji">
+					<h1 id="about-me">about me</h1>
+
+<p>to do
+				</article>
+			</div>
+		</section>
+	</div>
+</div>
+
+				</div>
+			</div>
+		</div>
+		
+	
+	
+		<script id="dsq-count-scr" src="//dream-plus.disqus.com/count.js" async></script>
+	
+
+		
+
+<script src="/js/site.js"></script>
+
+
+
+	<script src="https://twemoji.maxcdn.com/2/twemoji.min.js?2.6"></script>
+
+
+
+
+
+
+
+
+
+		
+
+
+		
+
+	<script>
+		(function () {
+		  console.log("Twemoji up and making stuff colourful!");
+		  for (var b = document.getElementsByClassName("twemoji"), a = 0; a < b.length; a++) {
+			twemoji.parse(b[a]);
+		  }
+		})();
+	</script>
+
+
+	</body>
+</html>

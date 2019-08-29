@@ -3,8 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://ta08.github.io/tags/canvas/</loc>
+    <lastmod>2019-08-27T21:09:55+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://ta08.github.io/categories/</loc>
-    <lastmod>2019-08-23T23:49:01+09:00</lastmod>
+    <lastmod>2019-08-27T21:09:55+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://ta08.github.io/posts/</loc>
+    <lastmod>2019-08-27T21:09:55+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://ta08.github.io/tags/processing/</loc>
+    <lastmod>2019-08-27T21:09:55+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://ta08.github.io/posts/20190827t21/</loc>
+    <lastmod>2019-08-27T21:09:55+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://ta08.github.io/tags/</loc>
+    <lastmod>2019-08-27T21:09:55+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://ta08.github.io/categories/tech/</loc>
+    <lastmod>2019-08-27T21:09:55+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://ta08.github.io/</loc>
+    <lastmod>2019-08-27T21:09:55+09:00</lastmod>
   </url>
   
   <url>
@@ -28,27 +63,7 @@
   </url>
   
   <url>
-    <loc>http://ta08.github.io/posts/</loc>
-    <lastmod>2019-08-23T23:49:01+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/tags/</loc>
-    <lastmod>2019-08-23T23:49:01+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/categories/tech/</loc>
-    <lastmod>2019-08-23T23:49:01+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://ta08.github.io/tags/visualization/</loc>
-    <lastmod>2019-08-23T23:49:01+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/</loc>
     <lastmod>2019-08-23T23:49:01+09:00</lastmod>
   </url>
   

@@ -6,10 +6,28 @@
     <description>Recent content in Tags on ブログ的な何か</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 23 Aug 2019 23:49:01 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 27 Aug 2019 21:09:55 +0900</lastBuildDate>
     
 	<atom:link href="http://ta08.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Canvas</title>
+      <link>http://ta08.github.io/tags/canvas/</link>
+      <pubDate>Tue, 27 Aug 2019 21:09:55 +0900</pubDate>
+      
+      <guid>http://ta08.github.io/tags/canvas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Processing</title>
+      <link>http://ta08.github.io/tags/processing/</link>
+      <pubDate>Tue, 27 Aug 2019 21:09:55 +0900</pubDate>
+      
+      <guid>http://ta08.github.io/tags/processing/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Elasticsearch</title>

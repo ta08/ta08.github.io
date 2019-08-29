@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Processing on ブログ的な何か</title>
+    <link>http://ta08.github.io/tags/processing/</link>
+    <description>Recent content in Processing on ブログ的な何か</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 27 Aug 2019 21:09:55 +0900</lastBuildDate>
+    
+	<atom:link href="http://ta08.github.io/tags/processing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Processingでビジュアルアート</title>
+      <link>http://ta08.github.io/posts/20190827t21/</link>
+      <pubDate>Tue, 27 Aug 2019 21:09:55 +0900</pubDate>
+      
+      <guid>http://ta08.github.io/posts/20190827t21/</guid>
+      <description>要点 Processingというプログラミング言語で遊んでみました。ビジュアルアートを行うためのプログラミング言語で統合開発環境も同梱されてい</description>
+    </item>
+    
+  </channel>
+</rss>
