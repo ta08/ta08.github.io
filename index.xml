@@ -6,10 +6,19 @@
     <description>Recent content on ブログ的な何か</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 02 Sep 2019 21:07:15 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 05 Sep 2019 13:19:59 +0900</lastBuildDate>
     
 	<atom:link href="http://ta08.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>なろうAPIで自然言語処理をするノートブック公開</title>
+      <link>http://ta08.github.io/posts/20190905t13/</link>
+      <pubDate>Thu, 05 Sep 2019 13:19:59 +0900</pubDate>
+      
+      <guid>http://ta08.github.io/posts/20190905t13/</guid>
+      <description>要点 自然言語処理がわからない人や小説家になろうを使って何かしたい人向けに、小説家になろう API を利用し、日本語でどうやって自然言語処理をやってい</description>
+    </item>
     
     <item>
       <title>AWSJPの無料キャンペーン通知</title>
