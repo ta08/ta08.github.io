@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GAS on ブログ的な何か</title>
+    <link>http://ta08.github.io/tags/gas/</link>
+    <description>Recent content in GAS on ブログ的な何か</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 08 Sep 2019 00:42:11 +0900</lastBuildDate>
+    
+	<atom:link href="http://ta08.github.io/tags/gas/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SiriとGASを用いて音声入力による記録自動化</title>
+      <link>http://ta08.github.io/posts/20190908t00/</link>
+      <pubDate>Sun, 08 Sep 2019 00:42:11 +0900</pubDate>
+      
+      <guid>http://ta08.github.io/posts/20190908t00/</guid>
+      <description>要点 SiriとGoogle Apps Scriptを用いて、Siriに話しかけて対話的に音声で質問に答えていき、その結果をGoogle SpreadSh</description>
+    </item>
+    
+  </channel>
+</rss>
