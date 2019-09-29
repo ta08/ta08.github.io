@@ -6,10 +6,55 @@
     <description>Recent content in Tags on ブログ的な何か</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 14 Sep 2019 04:01:56 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 24 Sep 2019 23:39:12 +0900</lastBuildDate>
     
 	<atom:link href="http://ta08.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CI</title>
+      <link>http://ta08.github.io/tags/ci/</link>
+      <pubDate>Tue, 24 Sep 2019 23:39:12 +0900</pubDate>
+      
+      <guid>http://ta08.github.io/tags/ci/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Documentation</title>
+      <link>http://ta08.github.io/tags/documentation/</link>
+      <pubDate>Tue, 24 Sep 2019 23:39:12 +0900</pubDate>
+      
+      <guid>http://ta08.github.io/tags/documentation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Girepo</title>
+      <link>http://ta08.github.io/tags/girepo/</link>
+      <pubDate>Tue, 24 Sep 2019 23:39:12 +0900</pubDate>
+      
+      <guid>http://ta08.github.io/tags/girepo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Markdown</title>
+      <link>http://ta08.github.io/tags/markdown/</link>
+      <pubDate>Tue, 24 Sep 2019 23:39:12 +0900</pubDate>
+      
+      <guid>http://ta08.github.io/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tool</title>
+      <link>http://ta08.github.io/tags/tool/</link>
+      <pubDate>Tue, 24 Sep 2019 23:39:12 +0900</pubDate>
+      
+      <guid>http://ta08.github.io/tags/tool/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>自作pc</title>
@@ -98,33 +143,6 @@
       <pubDate>Mon, 02 Sep 2019 21:07:15 +0900</pubDate>
       
       <guid>http://ta08.github.io/tags/twitter/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Documentation</title>
-      <link>http://ta08.github.io/tags/documentation/</link>
-      <pubDate>Sun, 01 Sep 2019 07:59:23 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/tags/documentation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Markdown</title>
-      <link>http://ta08.github.io/tags/markdown/</link>
-      <pubDate>Sun, 01 Sep 2019 07:59:23 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/tags/markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tool</title>
-      <link>http://ta08.github.io/tags/tool/</link>
-      <pubDate>Sun, 01 Sep 2019 07:59:23 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/tags/tool/</guid>
       <description></description>
     </item>
     

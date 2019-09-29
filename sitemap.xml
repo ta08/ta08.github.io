@@ -3,32 +3,67 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://ta08.github.io/categories/</loc>
+    <lastmod>2019-09-24T23:39:12+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://ta08.github.io/tags/ci/</loc>
+    <lastmod>2019-09-24T23:39:12+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://ta08.github.io/tags/documentation/</loc>
+    <lastmod>2019-09-24T23:39:12+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://ta08.github.io/tags/girepo/</loc>
+    <lastmod>2019-09-24T23:39:12+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://ta08.github.io/tags/markdown/</loc>
+    <lastmod>2019-09-24T23:39:12+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://ta08.github.io/posts/</loc>
+    <lastmod>2019-09-24T23:39:12+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://ta08.github.io/tags/</loc>
+    <lastmod>2019-09-24T23:39:12+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://ta08.github.io/categories/tech/</loc>
+    <lastmod>2019-09-24T23:39:12+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://ta08.github.io/tags/tool/</loc>
+    <lastmod>2019-09-24T23:39:12+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://ta08.github.io/</loc>
+    <lastmod>2019-09-24T23:39:12+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://ta08.github.io/posts/20190924t23/</loc>
+    <lastmod>2019-09-24T23:39:12+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://ta08.github.io/posts/20190914t04/</loc>
     <lastmod>2019-09-14T04:01:56+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://ta08.github.io/categories/</loc>
-    <lastmod>2019-09-14T04:01:56+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://ta08.github.io/categories/info/</loc>
-    <lastmod>2019-09-14T04:01:56+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/posts/</loc>
-    <lastmod>2019-09-14T04:01:56+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/tags/</loc>
-    <lastmod>2019-09-14T04:01:56+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/</loc>
     <lastmod>2019-09-14T04:01:56+09:00</lastmod>
   </url>
   
@@ -49,11 +84,6 @@
   
   <url>
     <loc>http://ta08.github.io/posts/20190908t00/</loc>
-    <lastmod>2019-09-08T00:42:11+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/categories/tech/</loc>
     <lastmod>2019-09-08T00:42:11+09:00</lastmod>
   </url>
   
@@ -100,21 +130,6 @@
   <url>
     <loc>http://ta08.github.io/tags/twitter/</loc>
     <lastmod>2019-09-02T21:07:15+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/tags/documentation/</loc>
-    <lastmod>2019-09-01T07:59:23+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/tags/markdown/</loc>
-    <lastmod>2019-09-01T07:59:23+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/tags/tool/</loc>
-    <lastmod>2019-09-01T07:59:23+09:00</lastmod>
   </url>
   
   <url>
