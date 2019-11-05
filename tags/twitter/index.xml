@@ -6,10 +6,19 @@
     <description>Recent content in Twitter on ブログ的な何か</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 02 Sep 2019 21:07:15 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 16 Oct 2019 01:33:47 +0900</lastBuildDate>
     
 	<atom:link href="http://ta08.github.io/tags/twitter/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>LambdaとIFTTTでBotの作成</title>
+      <link>http://ta08.github.io/posts/20191016t01/</link>
+      <pubDate>Wed, 16 Oct 2019 01:33:47 +0900</pubDate>
+      
+      <guid>http://ta08.github.io/posts/20191016t01/</guid>
+      <description>要点 IFTTTとAWSのLambdaを利用し、外部サービスのWebAPIの結果を整形し、投稿するTwitterのBotを作成しました。 はじめ</description>
+    </item>
     
     <item>
       <title>AWSJPの無料キャンペーン通知</title>
