@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Asana on ブログ的な何か</title>
+    <link>http://ta08.github.io/tags/asana/</link>
+    <description>Recent content in Asana on ブログ的な何か</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 06 Nov 2019 22:41:08 +0900</lastBuildDate>
+    
+	<atom:link href="http://ta08.github.io/tags/asana/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>TODOツールをAsanaからJiraに移行</title>
+      <link>http://ta08.github.io/posts/20191106t22/</link>
+      <pubDate>Wed, 06 Nov 2019 22:41:08 +0900</pubDate>
+      
+      <guid>http://ta08.github.io/posts/20191106t22/</guid>
+      <description>要点 課題管理やプロジェクト管理に使われるJiraのCloud版(以後Jira)が無料になったため、プライベートのタスク管理方法をAsanaか</description>
+    </item>
+    
+  </channel>
+</rss>
