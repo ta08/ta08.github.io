@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>aws_bot on ブログ的な何か</title>
+    <link>http://ta08.github.io/categories/aws_bot/</link>
+    <description>Recent content in aws_bot on ブログ的な何か</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Fri, 15 Nov 2019 17:00:12 +0900</lastBuildDate>
+    
+	<atom:link href="http://ta08.github.io/categories/aws_bot/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AWS CDKによるプロビジョニング化</title>
+      <link>http://ta08.github.io/posts/20191115t20/</link>
+      <pubDate>Fri, 15 Nov 2019 17:00:12 +0900</pubDate>
+      
+      <guid>http://ta08.github.io/posts/20191115t20/</guid>
+      <description>要点 以前行った LambdaとIFTTTでBotの作成の続編として、アーキテクチャの改良を行いました。新しいアーキテクチャはAWS CDKで構成</description>
+    </item>
+    
+    <item>
+      <title>LambdaとIFTTTでBotの作成</title>
+      <link>http://ta08.github.io/posts/20191016t01/</link>
+      <pubDate>Wed, 16 Oct 2019 01:33:47 +0900</pubDate>
+      
+      <guid>http://ta08.github.io/posts/20191016t01/</guid>
+      <description>要点 IFTTTとAWSのLambdaを利用し、外部サービスのWebAPIの結果を整形し、投稿するTwitterのBotを作成しました。 はじめ</description>
+    </item>
+    
+  </channel>
+</rss>
