@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on ブログ的な何か</title>
-    <link>http://localhost:59877/categories/</link>
+    <link>http://ta08.github.io/categories/</link>
     <description>Recent content in Categories on ブログ的な何か</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 25 May 2025 20:36:44 +0900</lastBuildDate>
-    <atom:link href="http://localhost:59877/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://ta08.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tech</title>
-      <link>http://localhost:59877/categories/tech/</link>
+      <link>http://ta08.github.io/categories/tech/</link>
       <pubDate>Sun, 25 May 2025 20:36:44 +0900</pubDate>
-      <guid>http://localhost:59877/categories/tech/</guid>
+      <guid>http://ta08.github.io/categories/tech/</guid>
       <description></description>
     </item>
     <item>
       <title>Aws_bot</title>
-      <link>http://localhost:59877/categories/aws_bot/</link>
+      <link>http://ta08.github.io/categories/aws_bot/</link>
       <pubDate>Fri, 15 Nov 2019 17:00:12 +0900</pubDate>
-      <guid>http://localhost:59877/categories/aws_bot/</guid>
+      <guid>http://ta08.github.io/categories/aws_bot/</guid>
       <description></description>
     </item>
     <item>
       <title>Info</title>
-      <link>http://localhost:59877/categories/info/</link>
+      <link>http://ta08.github.io/categories/info/</link>
       <pubDate>Wed, 06 Nov 2019 22:41:08 +0900</pubDate>
-      <guid>http://localhost:59877/categories/info/</guid>
+      <guid>http://ta08.github.io/categories/info/</guid>
       <description></description>
     </item>
     <item>
       <title>Gas_siri</title>
-      <link>http://localhost:59877/categories/gas_siri/</link>
+      <link>http://ta08.github.io/categories/gas_siri/</link>
       <pubDate>Mon, 30 Sep 2019 02:07:57 +0900</pubDate>
-      <guid>http://localhost:59877/categories/gas_siri/</guid>
+      <guid>http://ta08.github.io/categories/gas_siri/</guid>
       <description></description>
     </item>
     <item>
       <title>Girepo</title>
-      <link>http://localhost:59877/categories/girepo/</link>
+      <link>http://ta08.github.io/categories/girepo/</link>
       <pubDate>Tue, 24 Sep 2019 23:39:12 +0900</pubDate>
-      <guid>http://localhost:59877/categories/girepo/</guid>
+      <guid>http://ta08.github.io/categories/girepo/</guid>
       <description></description>
     </item>
   </channel>

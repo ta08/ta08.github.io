@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on ブログ的な何か</title>
-    <link>http://localhost:59877/tags/python/</link>
+    <link>http://ta08.github.io/tags/python/</link>
     <description>Recent content in Python on ブログ的な何か</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Mon, 02 Sep 2019 21:07:15 +0900</lastBuildDate>
-    <atom:link href="http://localhost:59877/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://ta08.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AWSJPの無料キャンペーン通知</title>
-      <link>http://localhost:59877/posts/20190902t21/</link>
+      <link>http://ta08.github.io/posts/20190902t21/</link>
       <pubDate>Mon, 02 Sep 2019 21:07:15 +0900</pubDate>
-      <guid>http://localhost:59877/posts/20190902t21/</guid>
+      <guid>http://ta08.github.io/posts/20190902t21/</guid>
       <description>&lt;h1 id=&#34;要点&#34;&gt;要点&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://twitter.com/awscloud_jp&#34;&gt;AWSJP&lt;/a&gt;が定期的に新規登録キャンペーンをツイッター上で告知しているため、キャンペーンのビックウェーブの乗り遅れることがないよう、キャンペーンの告知を検知して通知する簡単なコードを書きました。&lt;/p&gt;&#xA;&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;HerokuやGCPの個人アカウントは元々持っているのですが、仕事で利用していたAWSの個人アカウントは持っていませんでした。AWSは使用無料枠が豊富ですし、AWSの普及度合いは高くて再び仕事で触る可能性がとても高いです。そこで個人利用するためのアカウントを作成することにしました。&lt;/p&gt;</description>
     </item>
   </channel>

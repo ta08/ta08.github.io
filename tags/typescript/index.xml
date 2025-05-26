@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Typescript on ブログ的な何か</title>
-    <link>http://localhost:59877/tags/typescript/</link>
+    <link>http://ta08.github.io/tags/typescript/</link>
     <description>Recent content in Typescript on ブログ的な何か</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Mon, 30 Sep 2019 02:07:57 +0900</lastBuildDate>
-    <atom:link href="http://localhost:59877/tags/typescript/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://ta08.github.io/tags/typescript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SiriとGASを用いて音声入力による記録自動化2</title>
-      <link>http://localhost:59877/posts/20190930t02/</link>
+      <link>http://ta08.github.io/posts/20190930t02/</link>
       <pubDate>Mon, 30 Sep 2019 02:07:57 +0900</pubDate>
-      <guid>http://localhost:59877/posts/20190930t02/</guid>
-      <description>&lt;h1 id=&#34;要点&#34;&gt;要点&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;以前行った &lt;a href=&#34;http://localhost:59877/posts/20190908t00/&#34;&gt;SiriとGASを用いて音声入力による記録自動化&lt;/a&gt; の続編として、保存されたデータを基にグラフを描画し、ユーザに表示するように改良しました。グラフの描画は特にライブラリを使わずともGoogleSpreadSheetの機能を利用して行う事が可能で、その様々なグラフをHTMLに埋め込むことで手軽にユーザに表示する事が可能でした。主にGoogleSpreadSheetの内容をウェブサイトとして表示する事を行いました。&lt;/p&gt;</description>
+      <guid>http://ta08.github.io/posts/20190930t02/</guid>
+      <description>&lt;h1 id=&#34;要点&#34;&gt;要点&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;以前行った &lt;a href=&#34;http://ta08.github.io/posts/20190908t00/&#34;&gt;SiriとGASを用いて音声入力による記録自動化&lt;/a&gt; の続編として、保存されたデータを基にグラフを描画し、ユーザに表示するように改良しました。グラフの描画は特にライブラリを使わずともGoogleSpreadSheetの機能を利用して行う事が可能で、その様々なグラフをHTMLに埋め込むことで手軽にユーザに表示する事が可能でした。主にGoogleSpreadSheetの内容をウェブサイトとして表示する事を行いました。&lt;/p&gt;</description>
     </item>
     <item>
       <title>SiriとGASを用いて音声入力による記録自動化</title>
-      <link>http://localhost:59877/posts/20190908t00/</link>
+      <link>http://ta08.github.io/posts/20190908t00/</link>
       <pubDate>Sun, 08 Sep 2019 00:42:11 +0900</pubDate>
-      <guid>http://localhost:59877/posts/20190908t00/</guid>
+      <guid>http://ta08.github.io/posts/20190908t00/</guid>
       <description>&lt;h1 id=&#34;要点&#34;&gt;要点&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;SiriとGoogle Apps Scriptを用いて、Siriに話しかけて対話的に音声で質問に答えていき、その結果をGoogle SpreadSheetにログとして保存する仕組みを作りました。&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Aws on ブログ的な何か</title>
-    <link>http://localhost:59877/tags/aws/</link>
+    <link>http://ta08.github.io/tags/aws/</link>
     <description>Recent content in Aws on ブログ的な何か</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 25 May 2025 20:36:44 +0900</lastBuildDate>
-    <atom:link href="http://localhost:59877/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://ta08.github.io/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>社内の技術シンポジウム用スライド</title>
-      <link>http://localhost:59877/posts/20250525t20/</link>
+      <link>http://ta08.github.io/posts/20250525t20/</link>
       <pubDate>Sun, 25 May 2025 20:36:44 +0900</pubDate>
-      <guid>http://localhost:59877/posts/20250525t20/</guid>
-      <description>&lt;h2 id=&#34;要点&#34;&gt;要点&lt;/h2&gt;&#xA;&lt;p&gt;2024 年末の社内技術シンポジウムで提出したスライド「&lt;strong&gt;AWS CDK によるプロビジョニング自動化&lt;/strong&gt;」を公開します。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;前半&lt;/strong&gt;：自身のブログ記事 URL を生成 AI に渡し、&lt;strong&gt;人の手を一切入れず&lt;/strong&gt;に作成したスライド。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;後半&lt;/strong&gt;：そのタネ明かしと、生成 AI に関する内容を私が手動で執筆したスライド。こちらが本命。&lt;br&gt;&#xA;ちなみにこの発表は &lt;strong&gt;新人賞&lt;/strong&gt; を頂きました。🎉&lt;br&gt;&#xA;（ブログ掲載にあたり、タイトルスライドの個人情報は削除済みです。チーム名とありますが、ソロプレイヤーです…。）&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;embed src=&#34;http://localhost:59877/images/20250525T20/2024_tech_sympo.pdf&#34; width=&#34;100%&#34; height=&#34;600px&#34; type=&#34;application/pdf&#34;&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;生成-aiについて&#34;&gt;生成 AIについて&lt;/h2&gt;&#xA;&lt;p&gt;登場からわずか数年で、&lt;strong&gt;中学生でも名前を知るほど普及&lt;/strong&gt;したのが生成 AI です。&lt;br&gt;&#xA;技術革新と普及スピードがあまりに速いため、ここで紹介する内容もすぐ「当たり前」になるかもしれません。とはいえ、&lt;/p&gt;</description>
+      <guid>http://ta08.github.io/posts/20250525t20/</guid>
+      <description>&lt;h2 id=&#34;要点&#34;&gt;要点&lt;/h2&gt;&#xA;&lt;p&gt;2024 年末の社内技術シンポジウムで提出したスライド「&lt;strong&gt;AWS CDK によるプロビジョニング自動化&lt;/strong&gt;」を公開します。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;前半&lt;/strong&gt;：自身のブログ記事 URL を生成 AI に渡し、&lt;strong&gt;人の手を一切入れず&lt;/strong&gt;に作成したスライド。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;後半&lt;/strong&gt;：そのタネ明かしと、生成 AI に関する内容を私が手動で執筆したスライド。こちらが本命。&lt;br&gt;&#xA;ちなみにこの発表は &lt;strong&gt;新人賞&lt;/strong&gt; を頂きました。🎉&lt;br&gt;&#xA;（ブログ掲載にあたり、タイトルスライドの個人情報は削除済みです。チーム名とありますが、ソロプレイヤーです…。）&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;embed src=&#34;http://ta08.github.io/images/20250525T20/2024_tech_sympo.pdf&#34; width=&#34;100%&#34; height=&#34;600px&#34; type=&#34;application/pdf&#34;&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;生成-aiについて&#34;&gt;生成 AIについて&lt;/h2&gt;&#xA;&lt;p&gt;登場からわずか数年で、&lt;strong&gt;中学生でも名前を知るほど普及&lt;/strong&gt;したのが生成 AI です。&lt;br&gt;&#xA;技術革新と普及スピードがあまりに速いため、ここで紹介する内容もすぐ「当たり前」になるかもしれません。とはいえ、&lt;/p&gt;</description>
     </item>
     <item>
       <title>AWS CDKによるプロビジョニング化</title>
-      <link>http://localhost:59877/posts/20191115t20/</link>
+      <link>http://ta08.github.io/posts/20191115t20/</link>
       <pubDate>Fri, 15 Nov 2019 17:00:12 +0900</pubDate>
-      <guid>http://localhost:59877/posts/20191115t20/</guid>
-      <description>&lt;h1 id=&#34;要点&#34;&gt;要点&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;以前行った &lt;a href=&#34;http://localhost:59877/posts/20191016t01/&#34;&gt;LambdaとIFTTTでBotの作成&lt;/a&gt;の続編として、アーキテクチャの改良を行いました。新しいアーキテクチャはAWS CDKで構成管理を行うようにし、SQSを追加することで耐障害性を向上させました。また異常時にはDiscordに通知するようにしました。&lt;/p&gt;</description>
+      <guid>http://ta08.github.io/posts/20191115t20/</guid>
+      <description>&lt;h1 id=&#34;要点&#34;&gt;要点&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;以前行った &lt;a href=&#34;http://ta08.github.io/posts/20191016t01/&#34;&gt;LambdaとIFTTTでBotの作成&lt;/a&gt;の続編として、アーキテクチャの改良を行いました。新しいアーキテクチャはAWS CDKで構成管理を行うようにし、SQSを追加することで耐障害性を向上させました。また異常時にはDiscordに通知するようにしました。&lt;/p&gt;</description>
     </item>
     <item>
       <title>LambdaとIFTTTでBotの作成</title>
-      <link>http://localhost:59877/posts/20191016t01/</link>
+      <link>http://ta08.github.io/posts/20191016t01/</link>
       <pubDate>Wed, 16 Oct 2019 01:33:47 +0900</pubDate>
-      <guid>http://localhost:59877/posts/20191016t01/</guid>
-      <description>&lt;h1 id=&#34;要点&#34;&gt;要点&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;IFTTTとAWSのLambdaを利用し、外部サービスのWebAPIの結果を整形し、投稿するTwitterのBotを作成しました。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:59877/images/20191016T01/Archtecture.jpg&#34; alt=&#34;arch&#34;&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;ドラクエウォークどっぷりハマっていました。流石に飽きました。&lt;/p&gt;</description>
+      <guid>http://ta08.github.io/posts/20191016t01/</guid>
+      <description>&lt;h1 id=&#34;要点&#34;&gt;要点&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;IFTTTとAWSのLambdaを利用し、外部サービスのWebAPIの結果を整形し、投稿するTwitterのBotを作成しました。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://ta08.github.io/images/20191016T01/Archtecture.jpg&#34; alt=&#34;arch&#34;&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;ドラクエウォークどっぷりハマっていました。流石に飽きました。&lt;/p&gt;</description>
     </item>
     <item>
       <title>AWSJPの無料キャンペーン通知</title>
-      <link>http://localhost:59877/posts/20190902t21/</link>
+      <link>http://ta08.github.io/posts/20190902t21/</link>
       <pubDate>Mon, 02 Sep 2019 21:07:15 +0900</pubDate>
-      <guid>http://localhost:59877/posts/20190902t21/</guid>
+      <guid>http://ta08.github.io/posts/20190902t21/</guid>
       <description>&lt;h1 id=&#34;要点&#34;&gt;要点&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://twitter.com/awscloud_jp&#34;&gt;AWSJP&lt;/a&gt;が定期的に新規登録キャンペーンをツイッター上で告知しているため、キャンペーンのビックウェーブの乗り遅れることがないよう、キャンペーンの告知を検知して通知する簡単なコードを書きました。&lt;/p&gt;&#xA;&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;HerokuやGCPの個人アカウントは元々持っているのですが、仕事で利用していたAWSの個人アカウントは持っていませんでした。AWSは使用無料枠が豊富ですし、AWSの普及度合いは高くて再び仕事で触る可能性がとても高いです。そこで個人利用するためのアカウントを作成することにしました。&lt;/p&gt;</description>
     </item>
   </channel>

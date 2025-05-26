@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CI on ブログ的な何か</title>
-    <link>http://localhost:59877/tags/ci/</link>
+    <link>http://ta08.github.io/tags/ci/</link>
     <description>Recent content in CI on ブログ的な何か</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Tue, 24 Sep 2019 23:39:12 +0900</lastBuildDate>
-    <atom:link href="http://localhost:59877/tags/ci/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://ta08.github.io/tags/ci/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>公開したToolの機能追加とCIの設定</title>
-      <link>http://localhost:59877/posts/20190924t23/</link>
+      <link>http://ta08.github.io/posts/20190924t23/</link>
       <pubDate>Tue, 24 Sep 2019 23:39:12 +0900</pubDate>
-      <guid>http://localhost:59877/posts/20190924t23/</guid>
+      <guid>http://ta08.github.io/posts/20190924t23/</guid>
       <description>&lt;h1 id=&#34;要点&#34;&gt;要点&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;以前公開したToolの機能追加とCI用にCircleCIなどを導入したお話です。またOSSならばGithubのマーケットプレイスからコードレビューや脆弱性チェック、依存ライブラリのバージョンアップ追随などが無料で利用が出来て、非常に便利だったのでご紹介します。&lt;/p&gt;</description>
     </item>
   </channel>

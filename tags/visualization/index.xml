@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Visualization on ブログ的な何か</title>
-    <link>http://localhost:59877/tags/visualization/</link>
+    <link>http://ta08.github.io/tags/visualization/</link>
     <description>Recent content in Visualization on ブログ的な何か</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Fri, 23 Aug 2019 23:49:01 +0900</lastBuildDate>
-    <atom:link href="http://localhost:59877/tags/visualization/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://ta08.github.io/tags/visualization/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>自宅ネットワークの不調を可視化</title>
-      <link>http://localhost:59877/posts/20190823t23/</link>
+      <link>http://ta08.github.io/posts/20190823t23/</link>
       <pubDate>Fri, 23 Aug 2019 23:49:01 +0900</pubDate>
-      <guid>http://localhost:59877/posts/20190823t23/</guid>
+      <guid>http://ta08.github.io/posts/20190823t23/</guid>
       <description>&lt;h1 id=&#34;要点&#34;&gt;要点&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;自宅ネットワークのネットワークが不調だったため、ログ収集を行い、Elasticsearchにログを蓄積し、Grafanaで可視化しました。&lt;/p&gt;&#xA;&lt;p&gt;下記の画像が完成したダッシュボードです。&lt;/p&gt;</description>
     </item>
   </channel>

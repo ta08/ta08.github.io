@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on ブログ的な何か</title>
-    <link>http://localhost:59877/tags/hugo/</link>
+    <link>http://ta08.github.io/tags/hugo/</link>
     <description>Recent content in Hugo on ブログ的な何か</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Tue, 20 Aug 2019 00:16:48 +0900</lastBuildDate>
-    <atom:link href="http://localhost:59877/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://ta08.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugoでブログ作成</title>
-      <link>http://localhost:59877/posts/first-post/</link>
+      <link>http://ta08.github.io/posts/first-post/</link>
       <pubDate>Tue, 20 Aug 2019 00:16:48 +0900</pubDate>
-      <guid>http://localhost:59877/posts/first-post/</guid>
-      <description>&lt;h1 id=&#34;要点&#34;&gt;要点&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Hugoで静的サイトを作成し、Github Pagesで公開した。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:59877/images/20190823T17-1.png&#34; alt=&#34;localhostでの表示&#34;&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Github Pagesでサイトを公開する一覧の流れを経験してみたかった。&lt;/p&gt;&#xA;&lt;p&gt;またGithubアカウントに紐付いたサイトとなるため、「ポートフォリオ」「ポートフォリオ＋ブログ」「ブログ」にするか悩んでおり、テーマの変更で簡単に後から切り替えられ、変更コストが低そうなツールを用いてサイトを構築したかった。&lt;/p&gt;</description>
+      <guid>http://ta08.github.io/posts/first-post/</guid>
+      <description>&lt;h1 id=&#34;要点&#34;&gt;要点&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Hugoで静的サイトを作成し、Github Pagesで公開した。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://ta08.github.io/images/20190823T17-1.png&#34; alt=&#34;localhostでの表示&#34;&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Github Pagesでサイトを公開する一覧の流れを経験してみたかった。&lt;/p&gt;&#xA;&lt;p&gt;またGithubアカウントに紐付いたサイトとなるため、「ポートフォリオ」「ポートフォリオ＋ブログ」「ブログ」にするか悩んでおり、テーマの変更で簡単に後から切り替えられ、変更コストが低そうなツールを用いてサイトを構築したかった。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

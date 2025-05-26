@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Processing on ブログ的な何か</title>
-    <link>http://localhost:59877/tags/processing/</link>
+    <link>http://ta08.github.io/tags/processing/</link>
     <description>Recent content in Processing on ブログ的な何か</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Tue, 27 Aug 2019 21:09:55 +0900</lastBuildDate>
-    <atom:link href="http://localhost:59877/tags/processing/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://ta08.github.io/tags/processing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Processingでビジュアルアート</title>
-      <link>http://localhost:59877/posts/20190827t21/</link>
+      <link>http://ta08.github.io/posts/20190827t21/</link>
       <pubDate>Tue, 27 Aug 2019 21:09:55 +0900</pubDate>
-      <guid>http://localhost:59877/posts/20190827t21/</guid>
+      <guid>http://ta08.github.io/posts/20190827t21/</guid>
       <description>&lt;h1 id=&#34;要点&#34;&gt;要点&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Processingというプログラミング言語で遊んでみました。ビジュアルアートを行うためのプログラミング言語で統合開発環境も同梱されていますので、簡単にビジュアルアートを作ることが出来ます。プログラミングを知らない人でも、座標計算で絵を書くことだけに集中できますので、ビジュアルアートの楽しさを味わえます。主に教育目的で面白い言語でした。&lt;/p&gt;</description>
     </item>
   </channel>
