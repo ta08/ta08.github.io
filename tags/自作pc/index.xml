@@ -1,24 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>自作pc on ブログ的な何か</title>
-    <link>http://ta08.github.io/tags/%E8%87%AA%E4%BD%9Cpc/</link>
+    <link>http://localhost:59877/tags/%E8%87%AA%E4%BD%9Cpc/</link>
     <description>Recent content in 自作pc on ブログ的な何か</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Sat, 14 Sep 2019 04:01:56 +0900</lastBuildDate>
-    
-	<atom:link href="http://ta08.github.io/tags/%E8%87%AA%E4%BD%9Cpc/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://localhost:59877/tags/%E8%87%AA%E4%BD%9Cpc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BTOサイト比較とPCの修理</title>
-      <link>http://ta08.github.io/posts/20190914t04/</link>
+      <link>http://localhost:59877/posts/20190914t04/</link>
       <pubDate>Sat, 14 Sep 2019 04:01:56 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/posts/20190914t04/</guid>
-      <description>要点 電源ユニットが故障した PC と昔の PC のパーツを組み合わせて、PCを直しました。電源ユニットの故障を直すのは大変だったという事と、元々は新しい</description>
+      <guid>http://localhost:59877/posts/20190914t04/</guid>
+      <description>&lt;h1 id=&#34;要点&#34;&gt;要点&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;電源ユニットが故障した PC と昔の PC のパーツを組み合わせて、PCを直しました。電源ユニットの故障を直すのは大変だったという事と、元々は新しい PC を買うことを考えていたので、そのために集めた BTO や自作関係の情報を残しておきます。内容は完全にブログ風味です。&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

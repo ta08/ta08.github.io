@@ -1,145 +1,117 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ブログ的な何か</title>
-    <link>http://ta08.github.io/</link>
+    <link>http://localhost:59877/</link>
     <description>Recent content on ブログ的な何か</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 15 Nov 2019 17:00:12 +0900</lastBuildDate>
-    
-	<atom:link href="http://ta08.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 25 May 2025 20:36:44 +0900</lastBuildDate>
+    <atom:link href="http://localhost:59877/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>社内の技術シンポジウム用スライド</title>
+      <link>http://localhost:59877/posts/20250525t20/</link>
+      <pubDate>Sun, 25 May 2025 20:36:44 +0900</pubDate>
+      <guid>http://localhost:59877/posts/20250525t20/</guid>
+      <description>&lt;h2 id=&#34;要点&#34;&gt;要点&lt;/h2&gt;&#xA;&lt;p&gt;2024 年末の社内技術シンポジウムで提出したスライド「&lt;strong&gt;AWS CDK によるプロビジョニング自動化&lt;/strong&gt;」を公開します。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;前半&lt;/strong&gt;：自身のブログ記事 URL を生成 AI に渡し、&lt;strong&gt;人の手を一切入れず&lt;/strong&gt;に作成したスライド。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;後半&lt;/strong&gt;：そのタネ明かしと、生成 AI に関する内容を私が手動で執筆したスライド。こちらが本命。&lt;br&gt;&#xA;ちなみにこの発表は &lt;strong&gt;新人賞&lt;/strong&gt; を頂きました。🎉&lt;br&gt;&#xA;（ブログ掲載にあたり、タイトルスライドの個人情報は削除済みです。チーム名とありますが、ソロプレイヤーです…。）&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;embed src=&#34;http://localhost:59877/images/20250525T20/2024_tech_sympo.pdf&#34; width=&#34;100%&#34; height=&#34;600px&#34; type=&#34;application/pdf&#34;&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;生成-aiについて&#34;&gt;生成 AIについて&lt;/h2&gt;&#xA;&lt;p&gt;登場からわずか数年で、&lt;strong&gt;中学生でも名前を知るほど普及&lt;/strong&gt;したのが生成 AI です。&lt;br&gt;&#xA;技術革新と普及スピードがあまりに速いため、ここで紹介する内容もすぐ「当たり前」になるかもしれません。とはいえ、&lt;/p&gt;</description>
+    </item>
     <item>
       <title>AWS CDKによるプロビジョニング化</title>
-      <link>http://ta08.github.io/posts/20191115t20/</link>
+      <link>http://localhost:59877/posts/20191115t20/</link>
       <pubDate>Fri, 15 Nov 2019 17:00:12 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/posts/20191115t20/</guid>
-      <description>要点 以前行った LambdaとIFTTTでBotの作成の続編として、アーキテクチャの改良を行いました。新しいアーキテクチャはAWS CDKで構成</description>
+      <guid>http://localhost:59877/posts/20191115t20/</guid>
+      <description>&lt;h1 id=&#34;要点&#34;&gt;要点&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;以前行った &lt;a href=&#34;http://localhost:59877/posts/20191016t01/&#34;&gt;LambdaとIFTTTでBotの作成&lt;/a&gt;の続編として、アーキテクチャの改良を行いました。新しいアーキテクチャはAWS CDKで構成管理を行うようにし、SQSを追加することで耐障害性を向上させました。また異常時にはDiscordに通知するようにしました。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>TODOツールをAsanaからJiraに移行</title>
-      <link>http://ta08.github.io/posts/20191106t22/</link>
+      <link>http://localhost:59877/posts/20191106t22/</link>
       <pubDate>Wed, 06 Nov 2019 22:41:08 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/posts/20191106t22/</guid>
-      <description>要点 課題管理やプロジェクト管理に使われるJiraのCloud版(以後Jira)が無料になったため、プライベートのタスク管理方法をAsanaか</description>
+      <guid>http://localhost:59877/posts/20191106t22/</guid>
+      <description>&lt;h1 id=&#34;要点&#34;&gt;要点&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;課題管理やプロジェクト管理に使われるJiraのCloud版(以後Jira)が無料になったため、プライベートのタスク管理方法をAsanaからJiraに移行しました。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>LambdaとIFTTTでBotの作成</title>
-      <link>http://ta08.github.io/posts/20191016t01/</link>
+      <link>http://localhost:59877/posts/20191016t01/</link>
       <pubDate>Wed, 16 Oct 2019 01:33:47 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/posts/20191016t01/</guid>
-      <description>要点 IFTTTとAWSのLambdaを利用し、外部サービスのWebAPIの結果を整形し、投稿するTwitterのBotを作成しました。 はじめ</description>
+      <guid>http://localhost:59877/posts/20191016t01/</guid>
+      <description>&lt;h1 id=&#34;要点&#34;&gt;要点&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;IFTTTとAWSのLambdaを利用し、外部サービスのWebAPIの結果を整形し、投稿するTwitterのBotを作成しました。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:59877/images/20191016T01/Archtecture.jpg&#34; alt=&#34;arch&#34;&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;ドラクエウォークどっぷりハマっていました。流石に飽きました。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>SiriとGASを用いて音声入力による記録自動化2</title>
-      <link>http://ta08.github.io/posts/20190930t02/</link>
+      <link>http://localhost:59877/posts/20190930t02/</link>
       <pubDate>Mon, 30 Sep 2019 02:07:57 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/posts/20190930t02/</guid>
-      <description>要点 以前行った SiriとGASを用いて音声入力による記録自動化 の続編として、保存されたデータを基にグラフを描画し、ユーザに表示するように改良</description>
+      <guid>http://localhost:59877/posts/20190930t02/</guid>
+      <description>&lt;h1 id=&#34;要点&#34;&gt;要点&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;以前行った &lt;a href=&#34;http://localhost:59877/posts/20190908t00/&#34;&gt;SiriとGASを用いて音声入力による記録自動化&lt;/a&gt; の続編として、保存されたデータを基にグラフを描画し、ユーザに表示するように改良しました。グラフの描画は特にライブラリを使わずともGoogleSpreadSheetの機能を利用して行う事が可能で、その様々なグラフをHTMLに埋め込むことで手軽にユーザに表示する事が可能でした。主にGoogleSpreadSheetの内容をウェブサイトとして表示する事を行いました。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>公開したToolの機能追加とCIの設定</title>
-      <link>http://ta08.github.io/posts/20190924t23/</link>
+      <link>http://localhost:59877/posts/20190924t23/</link>
       <pubDate>Tue, 24 Sep 2019 23:39:12 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/posts/20190924t23/</guid>
-      <description>要点 以前公開したToolの機能追加とCI用にCircleCIなどを導入したお話です。またOSSならばGithubのマーケットプレイスからコー</description>
+      <guid>http://localhost:59877/posts/20190924t23/</guid>
+      <description>&lt;h1 id=&#34;要点&#34;&gt;要点&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;以前公開したToolの機能追加とCI用にCircleCIなどを導入したお話です。またOSSならばGithubのマーケットプレイスからコードレビューや脆弱性チェック、依存ライブラリのバージョンアップ追随などが無料で利用が出来て、非常に便利だったのでご紹介します。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>BTOサイト比較とPCの修理</title>
-      <link>http://ta08.github.io/posts/20190914t04/</link>
+      <link>http://localhost:59877/posts/20190914t04/</link>
       <pubDate>Sat, 14 Sep 2019 04:01:56 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/posts/20190914t04/</guid>
-      <description>要点 電源ユニットが故障した PC と昔の PC のパーツを組み合わせて、PCを直しました。電源ユニットの故障を直すのは大変だったという事と、元々は新しい</description>
+      <guid>http://localhost:59877/posts/20190914t04/</guid>
+      <description>&lt;h1 id=&#34;要点&#34;&gt;要点&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;電源ユニットが故障した PC と昔の PC のパーツを組み合わせて、PCを直しました。電源ユニットの故障を直すのは大変だったという事と、元々は新しい PC を買うことを考えていたので、そのために集めた BTO や自作関係の情報を残しておきます。内容は完全にブログ風味です。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>SiriとGASを用いて音声入力による記録自動化</title>
-      <link>http://ta08.github.io/posts/20190908t00/</link>
+      <link>http://localhost:59877/posts/20190908t00/</link>
       <pubDate>Sun, 08 Sep 2019 00:42:11 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/posts/20190908t00/</guid>
-      <description>要点 SiriとGoogle Apps Scriptを用いて、Siriに話しかけて対話的に音声で質問に答えていき、その結果をGoogle SpreadSh</description>
+      <guid>http://localhost:59877/posts/20190908t00/</guid>
+      <description>&lt;h1 id=&#34;要点&#34;&gt;要点&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;SiriとGoogle Apps Scriptを用いて、Siriに話しかけて対話的に音声で質問に答えていき、その結果をGoogle SpreadSheetにログとして保存する仕組みを作りました。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>なろうAPIで自然言語処理をするノートブック公開</title>
-      <link>http://ta08.github.io/posts/20190905t13/</link>
+      <link>http://localhost:59877/posts/20190905t13/</link>
       <pubDate>Thu, 05 Sep 2019 13:19:59 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/posts/20190905t13/</guid>
-      <description>要点 自然言語処理がわからない人や小説家になろうを使って何かしたい人向けに、小説家になろう API を利用し、日本語でどうやって自然言語処理をやってい</description>
+      <guid>http://localhost:59877/posts/20190905t13/</guid>
+      <description>&lt;h1 id=&#34;要点&#34;&gt;要点&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;自然言語処理がわからない人や小説家になろうを使って何かしたい人向けに、小説家になろう API を利用し、日本語でどうやって自然言語処理をやっていくか説明したノートブックの公開をしました。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>AWSJPの無料キャンペーン通知</title>
-      <link>http://ta08.github.io/posts/20190902t21/</link>
+      <link>http://localhost:59877/posts/20190902t21/</link>
       <pubDate>Mon, 02 Sep 2019 21:07:15 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/posts/20190902t21/</guid>
-      <description>要点 AWSJPが定期的に新規登録キャンペーンをツイッター上で告知しているため、キャンペーンのビックウェーブの乗り遅れることがないよう、キャン</description>
+      <guid>http://localhost:59877/posts/20190902t21/</guid>
+      <description>&lt;h1 id=&#34;要点&#34;&gt;要点&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://twitter.com/awscloud_jp&#34;&gt;AWSJP&lt;/a&gt;が定期的に新規登録キャンペーンをツイッター上で告知しているため、キャンペーンのビックウェーブの乗り遅れることがないよう、キャンペーンの告知を検知して通知する簡単なコードを書きました。&lt;/p&gt;&#xA;&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;HerokuやGCPの個人アカウントは元々持っているのですが、仕事で利用していたAWSの個人アカウントは持っていませんでした。AWSは使用無料枠が豊富ですし、AWSの普及度合いは高くて再び仕事で触る可能性がとても高いです。そこで個人利用するためのアカウントを作成することにしました。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>調査補助ツールの作成と公開</title>
-      <link>http://ta08.github.io/posts/20190901t07/</link>
+      <link>http://localhost:59877/posts/20190901t07/</link>
       <pubDate>Sun, 01 Sep 2019 07:59:23 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/posts/20190901t07/</guid>
-      <description>要点 Githubのリポジトリ情報で重要な指標を抜粋・導出し、マークダウン形式のテーブルフォーマットで出力してくれるツールgirepoを作成し</description>
+      <guid>http://localhost:59877/posts/20190901t07/</guid>
+      <description>&lt;h1 id=&#34;要点&#34;&gt;要点&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Githubのリポジトリ情報で重要な指標を抜粋・導出し、マークダウン形式のテーブルフォーマットで出力してくれるツール&lt;code&gt;girepo&lt;/code&gt;を作成しました。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Processingでビジュアルアート</title>
-      <link>http://ta08.github.io/posts/20190827t21/</link>
+      <link>http://localhost:59877/posts/20190827t21/</link>
       <pubDate>Tue, 27 Aug 2019 21:09:55 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/posts/20190827t21/</guid>
-      <description>要点 Processingというプログラミング言語で遊んでみました。ビジュアルアートを行うためのプログラミング言語で統合開発環境も同梱されてい</description>
+      <guid>http://localhost:59877/posts/20190827t21/</guid>
+      <description>&lt;h1 id=&#34;要点&#34;&gt;要点&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Processingというプログラミング言語で遊んでみました。ビジュアルアートを行うためのプログラミング言語で統合開発環境も同梱されていますので、簡単にビジュアルアートを作ることが出来ます。プログラミングを知らない人でも、座標計算で絵を書くことだけに集中できますので、ビジュアルアートの楽しさを味わえます。主に教育目的で面白い言語でした。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>自宅ネットワークの不調を可視化</title>
-      <link>http://ta08.github.io/posts/20190823t23/</link>
+      <link>http://localhost:59877/posts/20190823t23/</link>
       <pubDate>Fri, 23 Aug 2019 23:49:01 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/posts/20190823t23/</guid>
-      <description>要点 自宅ネットワークのネットワークが不調だったため、ログ収集を行い、Elasticsearchにログを蓄積し、Grafanaで可視化しました</description>
+      <guid>http://localhost:59877/posts/20190823t23/</guid>
+      <description>&lt;h1 id=&#34;要点&#34;&gt;要点&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;自宅ネットワークのネットワークが不調だったため、ログ収集を行い、Elasticsearchにログを蓄積し、Grafanaで可視化しました。&lt;/p&gt;&#xA;&lt;p&gt;下記の画像が完成したダッシュボードです。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Hugoでブログ作成</title>
-      <link>http://ta08.github.io/posts/first-post/</link>
+      <link>http://localhost:59877/posts/first-post/</link>
       <pubDate>Tue, 20 Aug 2019 00:16:48 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/posts/first-post/</guid>
-      <description>要点 Hugoで静的サイトを作成し、Github Pagesで公開した。 はじめに Github Pagesでサイトを公開する一覧の流れを経験してみたかった。 ま</description>
+      <guid>http://localhost:59877/posts/first-post/</guid>
+      <description>&lt;h1 id=&#34;要点&#34;&gt;要点&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Hugoで静的サイトを作成し、Github Pagesで公開した。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:59877/images/20190823T17-1.png&#34; alt=&#34;localhostでの表示&#34;&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Github Pagesでサイトを公開する一覧の流れを経験してみたかった。&lt;/p&gt;&#xA;&lt;p&gt;またGithubアカウントに紐付いたサイトとなるため、「ポートフォリオ」「ポートフォリオ＋ブログ」「ブログ」にするか悩んでおり、テーマの変更で簡単に後から切り替えられ、変更コストが低そうなツールを用いてサイトを構築したかった。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title></title>
-      <link>http://ta08.github.io/about/</link>
+      <link>http://localhost:59877/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://ta08.github.io/about/</guid>
-      <description> About Me 🐝 👤 💓 🍕🍣🍰🍈.
-As a Software Engineer 🌸 I&amp;rsquo;m a software engineer, spending the most time as a back-ends engineer.
-Speaking of programming languages, I have experiences with Scala, Java, Python, Typescript at work.
-But not only these programming languages, I have experiences with other programming languages in my private time.
-Education 🎓  Bachelor of Computer Science Master of Computer Science  especially NLP   Tech Interests ⭐✨✨  Natural Language Processing Functional Programming Automation Data Visualization Data Handling Rust  </description>
+      <guid>http://localhost:59877/about/</guid>
+      <description>&lt;h1 id=&#34;about-me-&#34;&gt;About Me 🐝&lt;/h1&gt;&#xA;&lt;p&gt;👤 💓 🍕🍣🍰🍈.&lt;/p&gt;&#xA;&lt;h2 id=&#34;as-a-software-engineer-&#34;&gt;As a Software Engineer 🌸&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m a software engineer, spending the most time as a back-ends engineer.&lt;/p&gt;&#xA;&lt;p&gt;Speaking of programming languages, I have experiences with Scala, Java, Python, Typescript at work.&lt;/p&gt;&#xA;&lt;p&gt;But not only these programming languages, I have experiences with other programming languages in my private time.&lt;/p&gt;&#xA;&lt;h2 id=&#34;education-&#34;&gt;Education 🎓&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Bachelor of Computer Science&lt;/li&gt;&#xA;&lt;li&gt;Master of Computer Science&#xA;&lt;ul&gt;&#xA;&lt;li&gt;especially NLP&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;tech-interests-&#34;&gt;Tech Interests ⭐✨✨&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Natural Language Processing&lt;/li&gt;&#xA;&lt;li&gt;Functional Programming&lt;/li&gt;&#xA;&lt;li&gt;Automation&lt;/li&gt;&#xA;&lt;li&gt;Data Visualization&lt;/li&gt;&#xA;&lt;li&gt;Data Handling&lt;/li&gt;&#xA;&lt;li&gt;Rust&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
-    
   </channel>
 </rss>

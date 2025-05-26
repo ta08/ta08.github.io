@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
-	<head>
+	<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=59877&amp;path=livereload" data-no-instant defer></script>
 		<title>
 	AWS CDKによるプロビジョニング化
 </title>
@@ -21,11 +21,12 @@
 	
 	
 	<meta name="author" content="ta08" />
-	<meta name="description" content="要点 以前行った LambdaとIFTTTでBotの作成の続編として、アーキテクチャの改良を行いました。新しいアーキテクチャはAWS CDKで構成" />
+	<meta name="description" content="要点 以前行った LambdaとIFTTTでBotの作成の続編として、アーキテクチャの改良を行いました。新しいアーキテクチャはAWS CDKで構成管理を行うようにし、SQSを追加することで耐障害性を向上させました。また異常時にはDiscordに通知するようにしました。
+" />
 
 
 
-<meta name="generator" content="Hugo 0.57.2" />
+<meta name="generator" content="Hugo 0.146.5">
 
 
 <link rel="shortcut icon" href="/img/defaultFav.ico">
@@ -143,34 +144,34 @@ function getRandomInt(min, max) {
 	
 		
 			
-			<a class="ui label blue " href="/tags/aws" title="aws">aws</a>
+			<a class="ui label violet " href="/tags/aws" title="aws">aws</a>
 		
 			
-			<a class="ui label teal " href="/tags/documentation" title="documentation">documentation</a>
+			<a class="ui label olive " href="/tags/documentation" title="documentation">documentation</a>
 		
 			
-			<a class="ui label green " href="/tags/gas" title="gas">gas</a>
+			<a class="ui label violet " href="/tags/gas" title="gas">gas</a>
 		
 			
-			<a class="ui label purple " href="/tags/girepo" title="girepo">girepo</a>
+			<a class="ui label pink " href="/tags/girepo" title="girepo">girepo</a>
 		
 			
-			<a class="ui label purple " href="/tags/markdown" title="markdown">markdown</a>
+			<a class="ui label brown " href="/tags/markdown" title="markdown">markdown</a>
 		
 			
-			<a class="ui label yellow " href="/tags/siri" title="siri">siri</a>
+			<a class="ui label green " href="/tags/siri" title="siri">siri</a>
 		
 			
-			<a class="ui label orange " href="/tags/tool" title="tool">tool</a>
+			<a class="ui label yellow " href="/tags/tool" title="tool">tool</a>
 		
 			
-			<a class="ui label yellow " href="/tags/twitter" title="twitter">twitter</a>
+			<a class="ui label blue " href="/tags/twitter" title="twitter">twitter</a>
 		
 			
-			<a class="ui label blue " href="/tags/typescript" title="typescript">typescript</a>
+			<a class="ui label olive " href="/tags/typescript" title="typescript">typescript</a>
 		
 			
-			<a class="ui label brown " href="/tags/asana" title="asana">asana</a>
+			<a class="ui label blue " href="/tags/asana" title="asana">asana</a>
 		
 	
 
@@ -192,14 +193,14 @@ function getRandomInt(min, max) {
 	
 	<div class="content">
 		
-			<a class="item" href="http://ta08.github.io/posts/20191115t20/">
+			<a class="item" href="http://localhost:59877/posts/20191115t20/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>AWS CDKによるプロビジョニング化</p>
 				</div>
 			</a>
 		
-			<a class="item" href="http://ta08.github.io/posts/20191016t01/">
+			<a class="item" href="http://localhost:59877/posts/20191016t01/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>LambdaとIFTTTでBotの作成</p>
@@ -217,14 +218,14 @@ function getRandomInt(min, max) {
 	
 	<div class="content">
 		
-			<a class="item" href="http://ta08.github.io/posts/20190930t02/">
+			<a class="item" href="http://localhost:59877/posts/20190930t02/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>SiriとGASを用いて音声入力による記録自動化2</p>
 				</div>
 			</a>
 		
-			<a class="item" href="http://ta08.github.io/posts/20190908t00/">
+			<a class="item" href="http://localhost:59877/posts/20190908t00/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>SiriとGASを用いて音声入力による記録自動化</p>
@@ -242,14 +243,14 @@ function getRandomInt(min, max) {
 	
 	<div class="content">
 		
-			<a class="item" href="http://ta08.github.io/posts/20190924t23/">
+			<a class="item" href="http://localhost:59877/posts/20190924t23/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>公開したToolの機能追加とCIの設定</p>
 				</div>
 			</a>
 		
-			<a class="item" href="http://ta08.github.io/posts/20190901t07/">
+			<a class="item" href="http://localhost:59877/posts/20190901t07/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>調査補助ツールの作成と公開</p>
@@ -267,14 +268,14 @@ function getRandomInt(min, max) {
 	
 	<div class="content">
 		
-			<a class="item" href="http://ta08.github.io/posts/20191106t22/">
+			<a class="item" href="http://localhost:59877/posts/20191106t22/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>TODOツールをAsanaからJiraに移行</p>
 				</div>
 			</a>
 		
-			<a class="item" href="http://ta08.github.io/posts/20190914t04/">
+			<a class="item" href="http://localhost:59877/posts/20190914t04/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>BTOサイト比較とPCの修理</p>
@@ -292,77 +293,84 @@ function getRandomInt(min, max) {
 	
 	<div class="content">
 		
-			<a class="item" href="http://ta08.github.io/posts/20191115t20/">
+			<a class="item" href="http://localhost:59877/posts/20250525t20/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>社内の技術シンポジウム用スライド</p>
+				</div>
+			</a>
+		
+			<a class="item" href="http://localhost:59877/posts/20191115t20/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>AWS CDKによるプロビジョニング化</p>
 				</div>
 			</a>
 		
-			<a class="item" href="http://ta08.github.io/posts/20191016t01/">
+			<a class="item" href="http://localhost:59877/posts/20191016t01/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>LambdaとIFTTTでBotの作成</p>
 				</div>
 			</a>
 		
-			<a class="item" href="http://ta08.github.io/posts/20190930t02/">
+			<a class="item" href="http://localhost:59877/posts/20190930t02/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>SiriとGASを用いて音声入力による記録自動化2</p>
 				</div>
 			</a>
 		
-			<a class="item" href="http://ta08.github.io/posts/20190924t23/">
+			<a class="item" href="http://localhost:59877/posts/20190924t23/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>公開したToolの機能追加とCIの設定</p>
 				</div>
 			</a>
 		
-			<a class="item" href="http://ta08.github.io/posts/20190908t00/">
+			<a class="item" href="http://localhost:59877/posts/20190908t00/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>SiriとGASを用いて音声入力による記録自動化</p>
 				</div>
 			</a>
 		
-			<a class="item" href="http://ta08.github.io/posts/20190905t13/">
+			<a class="item" href="http://localhost:59877/posts/20190905t13/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>なろうAPIで自然言語処理をするノートブック公開</p>
 				</div>
 			</a>
 		
-			<a class="item" href="http://ta08.github.io/posts/20190902t21/">
+			<a class="item" href="http://localhost:59877/posts/20190902t21/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>AWSJPの無料キャンペーン通知</p>
 				</div>
 			</a>
 		
-			<a class="item" href="http://ta08.github.io/posts/20190901t07/">
+			<a class="item" href="http://localhost:59877/posts/20190901t07/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>調査補助ツールの作成と公開</p>
 				</div>
 			</a>
 		
-			<a class="item" href="http://ta08.github.io/posts/20190827t21/">
+			<a class="item" href="http://localhost:59877/posts/20190827t21/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>Processingでビジュアルアート</p>
 				</div>
 			</a>
 		
-			<a class="item" href="http://ta08.github.io/posts/20190823t23/">
+			<a class="item" href="http://localhost:59877/posts/20190823t23/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>自宅ネットワークの不調を可視化</p>
 				</div>
 			</a>
 		
-			<a class="item" href="http://ta08.github.io/posts/first-post/">
+			<a class="item" href="http://localhost:59877/posts/first-post/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>Hugoでブログ作成</p>
@@ -380,7 +388,7 @@ function getRandomInt(min, max) {
 	<section id="footer" class="ui bottom attached center aligned inverted segment">
 		
 
-	<p>© 2019 ブログ的な何か</p>
+	<p>© 2019 - 2025 ブログ的な何か</p>
 
 
 <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with <a href="https://github.com/UtkarshVerma/hugo-dream-plus" target="_blank">Dream Plus</a> theme.</p>
@@ -498,34 +506,34 @@ function getRandomInt(min, max) {
 	
 		
 			
-			<a class="ui label violet " href="/tags/aws" title="aws">aws</a>
+			<a class="ui label pink " href="/tags/aws" title="aws">aws</a>
 		
 			
-			<a class="ui label orange " href="/tags/documentation" title="documentation">documentation</a>
+			<a class="ui label brown " href="/tags/documentation" title="documentation">documentation</a>
 		
 			
-			<a class="ui label yellow " href="/tags/gas" title="gas">gas</a>
+			<a class="ui label purple " href="/tags/gas" title="gas">gas</a>
 		
 			
 			<a class="ui label blue " href="/tags/girepo" title="girepo">girepo</a>
 		
 			
-			<a class="ui label yellow " href="/tags/markdown" title="markdown">markdown</a>
+			<a class="ui label purple " href="/tags/markdown" title="markdown">markdown</a>
 		
 			
-			<a class="ui label yellow " href="/tags/siri" title="siri">siri</a>
+			<a class="ui label teal " href="/tags/siri" title="siri">siri</a>
 		
 			
 			<a class="ui label yellow " href="/tags/tool" title="tool">tool</a>
 		
 			
-			<a class="ui label blue " href="/tags/twitter" title="twitter">twitter</a>
+			<a class="ui label green " href="/tags/twitter" title="twitter">twitter</a>
 		
 			
-			<a class="ui label purple " href="/tags/typescript" title="typescript">typescript</a>
+			<a class="ui label green " href="/tags/typescript" title="typescript">typescript</a>
 		
 			
-			<a class="ui label orange " href="/tags/asana" title="asana">asana</a>
+			<a class="ui label pink " href="/tags/asana" title="asana">asana</a>
 		
 	
 
@@ -546,14 +554,14 @@ function getRandomInt(min, max) {
 	
 	<div class="content">
 		
-			<a class="item" href="http://ta08.github.io/posts/20191115t20/">
+			<a class="item" href="http://localhost:59877/posts/20191115t20/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>AWS CDKによるプロビジョニング化</p>
 				</div>
 			</a>
 		
-			<a class="item" href="http://ta08.github.io/posts/20191016t01/">
+			<a class="item" href="http://localhost:59877/posts/20191016t01/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>LambdaとIFTTTでBotの作成</p>
@@ -571,14 +579,14 @@ function getRandomInt(min, max) {
 	
 	<div class="content">
 		
-			<a class="item" href="http://ta08.github.io/posts/20190930t02/">
+			<a class="item" href="http://localhost:59877/posts/20190930t02/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>SiriとGASを用いて音声入力による記録自動化2</p>
 				</div>
 			</a>
 		
-			<a class="item" href="http://ta08.github.io/posts/20190908t00/">
+			<a class="item" href="http://localhost:59877/posts/20190908t00/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>SiriとGASを用いて音声入力による記録自動化</p>
@@ -596,14 +604,14 @@ function getRandomInt(min, max) {
 	
 	<div class="content">
 		
-			<a class="item" href="http://ta08.github.io/posts/20190924t23/">
+			<a class="item" href="http://localhost:59877/posts/20190924t23/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>公開したToolの機能追加とCIの設定</p>
 				</div>
 			</a>
 		
-			<a class="item" href="http://ta08.github.io/posts/20190901t07/">
+			<a class="item" href="http://localhost:59877/posts/20190901t07/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>調査補助ツールの作成と公開</p>
@@ -621,14 +629,14 @@ function getRandomInt(min, max) {
 	
 	<div class="content">
 		
-			<a class="item" href="http://ta08.github.io/posts/20191106t22/">
+			<a class="item" href="http://localhost:59877/posts/20191106t22/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>TODOツールをAsanaからJiraに移行</p>
 				</div>
 			</a>
 		
-			<a class="item" href="http://ta08.github.io/posts/20190914t04/">
+			<a class="item" href="http://localhost:59877/posts/20190914t04/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>BTOサイト比較とPCの修理</p>
@@ -646,77 +654,84 @@ function getRandomInt(min, max) {
 	
 	<div class="content">
 		
-			<a class="item" href="http://ta08.github.io/posts/20191115t20/">
+			<a class="item" href="http://localhost:59877/posts/20250525t20/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>社内の技術シンポジウム用スライド</p>
+				</div>
+			</a>
+		
+			<a class="item" href="http://localhost:59877/posts/20191115t20/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>AWS CDKによるプロビジョニング化</p>
 				</div>
 			</a>
 		
-			<a class="item" href="http://ta08.github.io/posts/20191016t01/">
+			<a class="item" href="http://localhost:59877/posts/20191016t01/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>LambdaとIFTTTでBotの作成</p>
 				</div>
 			</a>
 		
-			<a class="item" href="http://ta08.github.io/posts/20190930t02/">
+			<a class="item" href="http://localhost:59877/posts/20190930t02/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>SiriとGASを用いて音声入力による記録自動化2</p>
 				</div>
 			</a>
 		
-			<a class="item" href="http://ta08.github.io/posts/20190924t23/">
+			<a class="item" href="http://localhost:59877/posts/20190924t23/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>公開したToolの機能追加とCIの設定</p>
 				</div>
 			</a>
 		
-			<a class="item" href="http://ta08.github.io/posts/20190908t00/">
+			<a class="item" href="http://localhost:59877/posts/20190908t00/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>SiriとGASを用いて音声入力による記録自動化</p>
 				</div>
 			</a>
 		
-			<a class="item" href="http://ta08.github.io/posts/20190905t13/">
+			<a class="item" href="http://localhost:59877/posts/20190905t13/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>なろうAPIで自然言語処理をするノートブック公開</p>
 				</div>
 			</a>
 		
-			<a class="item" href="http://ta08.github.io/posts/20190902t21/">
+			<a class="item" href="http://localhost:59877/posts/20190902t21/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>AWSJPの無料キャンペーン通知</p>
 				</div>
 			</a>
 		
-			<a class="item" href="http://ta08.github.io/posts/20190901t07/">
+			<a class="item" href="http://localhost:59877/posts/20190901t07/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>調査補助ツールの作成と公開</p>
 				</div>
 			</a>
 		
-			<a class="item" href="http://ta08.github.io/posts/20190827t21/">
+			<a class="item" href="http://localhost:59877/posts/20190827t21/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>Processingでビジュアルアート</p>
 				</div>
 			</a>
 		
-			<a class="item" href="http://ta08.github.io/posts/20190823t23/">
+			<a class="item" href="http://localhost:59877/posts/20190823t23/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>自宅ネットワークの不調を可視化</p>
 				</div>
 			</a>
 		
-			<a class="item" href="http://ta08.github.io/posts/first-post/">
+			<a class="item" href="http://localhost:59877/posts/first-post/">
 				<div>
 					<i class="cocktail icon"></i>
 					<p>Hugoでブログ作成</p>
@@ -735,7 +750,7 @@ function getRandomInt(min, max) {
 		<footer class="ui bottom attached center aligned inverted segment">
 			
 
-	<p>© 2019 ブログ的な何か</p>
+	<p>© 2019 - 2025 ブログ的な何か</p>
 
 
 <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with <a href="https://github.com/UtkarshVerma/hugo-dream-plus" target="_blank">Dream Plus</a> theme.</p>
@@ -756,7 +771,7 @@ function getRandomInt(min, max) {
 				<div class="sub header">
 					<div><span><i class="calendar outline icon"></i>Nov 15, 2019</span></div>
 					
-					<div><span class="disqusComment"><i class="comment outline icon"></i><a href="http://ta08.github.io/posts/20191115t20/#disqus_thread" class="disqus-comment-count" data-disqus-identifier="77628a3644f2ecf5dfb5463703275d61"></a></span></div>
+					<div><span class="disqusComment"><i class="comment outline icon"></i><a href="http://localhost:59877/posts/20191115t20/#disqus_thread" class="disqus-comment-count" data-disqus-identifier="77628a3644f2ecf5dfb5463703275d61"></a></span></div>
 					<div><span><i class="clock outline icon"></i>8 min read</span></div>
 					<div><span><i class="angle double up icon"></i>Last updated on Nov 15, 2019</span></div>
 				</div>
@@ -765,188 +780,129 @@ function getRandomInt(min, max) {
 				
 					<div class="toc">
 						<nav id="TableOfContents">
-<ul>
-<li><a href="#要点">要点</a></li>
-<li><a href="#はじめに">はじめに</a></li>
-<li><a href="#aws-cdk">AWS CDK</a>
-<ul>
-<li><a href="#github-repository">Github Repository</a></li>
-<li><a href="#学習コスト">学習コスト</a></li>
-<li><a href="#使用感">使用感</a></li>
-<li><a href="#今後">今後</a></li>
-</ul></li>
-<li><a href="#アーキテクチャの変化">アーキテクチャの変化</a>
-<ul>
-<li><a href="#前回">前回</a></li>
-<li><a href="#改良後">改良後</a></li>
-<li><a href="#aws-cdk関連">AWS CDK関連</a></li>
-</ul></li>
-<li><a href="#おわりに">おわりに</a></li>
-</ul>
+  <ul>
+    <li><a href="#github-repository">Github Repository</a></li>
+    <li><a href="#学習コスト">学習コスト</a></li>
+    <li><a href="#使用感">使用感</a></li>
+    <li><a href="#今後">今後</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#前回">前回</a></li>
+    <li><a href="#改良後">改良後</a></li>
+    <li><a href="#aws-cdk関連">AWS CDK関連</a></li>
+  </ul>
 </nav>
 					</div>
 				
 
 				<article class="post-content twemoji">
-					
-
-<h1 id="要点">要点&nbsp;<a class="anchor" href="#要点"><i class="small linkify icon"></i></a> </h1>
-
-<hr />
-
+					<h1 id="要点">要点&nbsp;<a class="anchor" href="#要点"><i class="small linkify icon"></i></a> </h1>
+<hr>
 <p>以前行った <a href="/posts/20191016t01/">LambdaとIFTTTでBotの作成</a>の続編として、アーキテクチャの改良を行いました。新しいアーキテクチャはAWS CDKで構成管理を行うようにし、SQSを追加することで耐障害性を向上させました。また異常時にはDiscordに通知するようにしました。</p>
-
 <p>今夏に正式リリースされたAWS CDKの所感は、従来のCloudFormationの設定ファイルを書くこと無く、透過的にCloudFormationを扱うことが可能で、さらに学習コストも低いので非常に優秀なフレームワークでした。プロジェクトに存在するCloudFormationの醸成した設定ファイルを置き換える必要性は低いですが、新規作成していくのであれば、採用するに値するフレームワークだと考えています。</p>
-
 <p>正式リリースされたのは今夏でまだまだ使用例は少ないですが、採用は今後どんどん増えていくと思います。</p>
-
-<p><img src="/images/20191115T20/Architecture_fin.jpg" alt="final" /></p>
-
+<p><img src="/images/20191115T20/Architecture_fin.jpg" alt="final"></p>
 <h1 id="はじめに">はじめに&nbsp;<a class="anchor" href="#はじめに"><i class="small linkify icon"></i></a> </h1>
-
-<hr />
-
+<hr>
 <p><a href="https://aws.amazon.com/jp/cdk/">AWS クラウド開発キット(以後AWS CDK)</a>が今年2019年の夏に正式リリースされた事を知りました。</p>
-
 <p>AWS CDK使い心地を確かめてみるべく、以前行った <a href="/posts/20191016t01/">LambdaとIFTTTでBotの作成</a>を題材に利用してみました。しかし以前のままだとアーキテクチャ的にAWS CDKで扱う量が少なく、直ぐに終わってしまいそうだったため、アーキテクチャを改良して登場サービスを増やしました。</p>
-
 <p>以下ではAWS CDKについての所感を述べます。またアーキテクチャの改良についても述べます。</p>
-
 <h1 id="aws-cdk">AWS CDK&nbsp;<a class="anchor" href="#aws-cdk"><i class="small linkify icon"></i></a> </h1>
-
-<hr />
-
+<hr>
 <p>まずAWS CDKとはなんぞやの前に、CloudFormationを知っておく必要があります。</p>
-
 <blockquote>
-<p><a href="https://aws.amazon.com/jp/cloudformation/">https://aws.amazon.com/jp/cloudformation/</a></p>
-
-<p>AWS CloudFormation は、クラウド環境内のすべてのインフラストラクチャリソースを記述してプロビジョニングするための共通言語を提供します。CloudFormation では、プログラミング言語またはシンプルなテキストファイルを使用して、あらゆるリージョンとアカウントでアプリケーションに必要とされるすべてのリソースを、自動化された安全な方法でモデル化し、プロビジョニングできます。これは、AWS リソースに真実の単一のソースを与えます。</p>
-</blockquote>
-
+<p><a href="https://aws.amazon.com/jp/cloudformation/">https://aws.amazon.com/jp/cloudformation/</a></p></blockquote>
+<blockquote>
+<p>AWS CloudFormation は、クラウド環境内のすべてのインフラストラクチャリソースを記述してプロビジョニングするための共通言語を提供します。CloudFormation では、プログラミング言語またはシンプルなテキストファイルを使用して、あらゆるリージョンとアカウントでアプリケーションに必要とされるすべてのリソースを、自動化された安全な方法でモデル化し、プロビジョニングできます。これは、AWS リソースに真実の単一のソースを与えます。</p></blockquote>
 <p>CloudFormationはざっくり言うと、AWSで利用するサービス（リソース）をブラウザ上でポチポチ手動で用意するのではなく、設定ファイルに書いておけば勝手にやってくれるよ、というのがCloudFormationです。</p>
-
 <p>利点などの詳細はドキュメントがあるので割愛します。CloudFormationはJSONやYAMLフォーマットで設定ファイルを書くわけですが、各設定項目を誤字無く、漏らすこと無く書かないといけないのでとても辛いです。</p>
-
 <p>黎明期はJSONしかサポートしていなかったためコメントを書けないなど辛みは多々あり、最近はYAMLの登場やプラグインの補完などでマシになったと思います。しかしそれでも設定ファイルを直書きしていくのが辛い、と涙で枕を濡らす人は居ると思っています。</p>
-
 <p>そこでAWS CDKです。</p>
-
 <blockquote>
-<p><a href="https://aws.amazon.com/jp/cdk/">https://aws.amazon.com/jp/cdk/</a></p>
-
-<p>AWS クラウド開発キット (AWS CDK) は、使い慣れたプログラミング言語を使用してクラウドアプリケーションリソースをモデル化およびプロビジョニングするためのオープンソースのソフトウェア開発フレームワークです。</p>
-</blockquote>
-
+<p><a href="https://aws.amazon.com/jp/cdk/">https://aws.amazon.com/jp/cdk/</a></p></blockquote>
+<blockquote>
+<p>AWS クラウド開発キット (AWS CDK) は、使い慣れたプログラミング言語を使用してクラウドアプリケーションリソースをモデル化およびプロビジョニングするためのオープンソースのソフトウェア開発フレームワークです。</p></blockquote>
 <p>AWS CDKはざっくり言うと、CloudFormationの設定ファイルを書くのが辛いので、プログラミング言語という抽象化レイヤーを用意したものです。つまりJSONやYAMLから開放され、プログラミング言語でコード補完を用いながら快適に、そして透過的にCloudFormationを操作出来るようにしたのがAWS CDKです。</p>
-
 <p>以下では <a href="https://cdkworkshop.com/">https://cdkworkshop.com/</a> で学習し、今回のアーキテクチャの改良を踏まえた計約半日〜1日程度触れての所感を述べます。</p>
-
 <h2 id="github-repository">Github Repository&nbsp;<a class="anchor" href="#github-repository"><i class="small linkify icon"></i></a> </h2>
-
 <table>
-<thead>
-<tr>
-<th align="center">fullname</th>
-<th align="center">star</th>
-<th align="center">star/day</th>
-<th align="center">created_at</th>
-<th align="center">updated_at</th>
-<th align="center">license</th>
-<th align="center">language</th>
-<th align="center">description</th>
-<th align="center">url</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td align="center">aws/aws-cdk</td>
-<td align="center">3,543</td>
-<td align="center">4.59</td>
-<td align="center">2017-10-04</td>
-<td align="center">2019-11-15</td>
-<td align="center">Apache License 2.0</td>
-<td align="center">TypeScript</td>
-<td align="center">The AWS Cloud Development Kit is a framework for defining cloud infrastructure in code</td>
-<td align="center"><a href="https://github.com/aws/aws-cdk">link</a></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: center">fullname</th>
+          <th style="text-align: center">star</th>
+          <th style="text-align: center">star/day</th>
+          <th style="text-align: center">created_at</th>
+          <th style="text-align: center">updated_at</th>
+          <th style="text-align: center">license</th>
+          <th style="text-align: center">language</th>
+          <th style="text-align: center">description</th>
+          <th style="text-align: center">url</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">aws/aws-cdk</td>
+          <td style="text-align: center">3,543</td>
+          <td style="text-align: center">4.59</td>
+          <td style="text-align: center">2017-10-04</td>
+          <td style="text-align: center">2019-11-15</td>
+          <td style="text-align: center">Apache License 2.0</td>
+          <td style="text-align: center">TypeScript</td>
+          <td style="text-align: center">The AWS Cloud Development Kit is a framework for defining cloud infrastructure in code</td>
+          <td style="text-align: center"><a href="https://github.com/aws/aws-cdk">link</a></td>
+      </tr>
+  </tbody>
 </table>
-
 <h2 id="学習コスト">学習コスト&nbsp;<a class="anchor" href="#学習コスト"><i class="small linkify icon"></i></a> </h2>
-
 <p>「ブラウザ上からリソースを作成する際の設定項目の理解度」「プログラミングスキル」に依存します。
 ブラウザ上からリソースを作成する際の設定項目について意味を理解しており、若干のプログラミングスキルがあれば学習コストは殆どないと感じました。</p>
-
 <p>学習コストは低いと思いますが、補完機能が効いても設定項目の意味がわからないと、流石に厳しいのかなというのが結論です。それはAWS CDKの学習コストというより、AWSの学習コストな気もしますが…。</p>
-
 <h2 id="使用感">使用感&nbsp;<a class="anchor" href="#使用感"><i class="small linkify icon"></i></a> </h2>
-
 <p>今回はTypescriptを用いてAWS CDKを利用しましたが、コードの補完機能とドキュメントを用いれば勝手に出来上がっていきます。というのもAWS CDKはあくまで設定ファイルの直書きをプログラミング言語で抽象化したに過ぎず、やっていることはとてもシンプルだからです。</p>
-
 <p>Typescriptの場合はモジュールが細分化されているので、現在使っているモジュールにあってほしいメソッド(機能)が無い場合は、だいたい別モジュール化されているのでドキュメントを確認してインストールする、が基本路線です。それでなんとかなりました。</p>
-
 <h2 id="今後">今後&nbsp;<a class="anchor" href="#今後"><i class="small linkify icon"></i></a> </h2>
-
 <p>AWS CDKはconstruct librariesの仕組みがあるため再利用性が高いです。そのため今後はアーキテクチャのコード共有が進み、鉄板アーキテクチャの類はconstruct librariesとしてGithubなどに公開されて行くと思います。そうするとビジネスロジック部分をGit Submoduleで導入するだけで良くなり、より技術のコモディティ化が進むと考えています。</p>
-
 <p>ただしAWS CDKは <a href="https://cdkworkshop.com/20-typescript/50-table-viewer/500-deploy.html#cdk-diff">https://cdkworkshop.com/20-typescript/50-table-viewer/500-deploy.html#cdk-diff</a>　にも書かれていましたが、非常に強い権限を持つがゆえにリスクも高いです。技術がコモディティ化すると敷居が下がることはメリットですが、悪意の持った攻撃を防げない人が増えることを意味しています。AWS CDKは影響範囲が甚大なので悪意のあるconstruct librariesに対し、コミュニティによる対策と使用者の自衛がとても大事になっていきます。</p>
-
 <h1 id="アーキテクチャの変化">アーキテクチャの変化&nbsp;<a class="anchor" href="#アーキテクチャの変化"><i class="small linkify icon"></i></a> </h1>
-
-<hr />
-
+<hr>
 <h2 id="前回">前回&nbsp;<a class="anchor" href="#前回"><i class="small linkify icon"></i></a> </h2>
-
 <p><a href="/posts/20191016t01/">LambdaとIFTTTでBotの作成</a></p>
-
 <p>元々はBotとしてTwitterに投稿できれば良いを達成するだけのアーキテクチャでした。使用するリソースを少なくする事でリソースが不要になった際の後片付けを簡単にしていました。</p>
-
-<p><img src="/images/20191115T20/Architecture.jpg" alt="origin" /></p>
-
+<p><img src="/images/20191115T20/Architecture.jpg" alt="origin"></p>
 <h2 id="改良後">改良後&nbsp;<a class="anchor" href="#改良後"><i class="small linkify icon"></i></a> </h2>
-
 <p>AWS CDKを導入してCloudFormationでリソースの一元管理を行うことにしたため、リソースが増加しても管理が楽になりました。そこでAWS CDKの使用感の確認も兼ねて、耐障害性の向上と異常時用にリソースを追加しました。</p>
-
 <p>追加したリソースの大雑把な説明としては以下のとおりです。なおWebAPIからデータ取得し、IFTTTにデータを投稿するLambda以降は変化していません。</p>
-
 <ul>
 <li>AWS CDK
-
 <ul>
 <li>CloudFormationを利用してリソースの一元管理</li>
-</ul></li>
+</ul>
+</li>
 <li>SQS
-
 <ul>
 <li>耐障害性の向上</li>
-</ul></li>
+</ul>
+</li>
 <li>Alarm, SNS, Lambda
-
 <ul>
 <li>Alarmを起点にして異常時フローを形成</li>
-</ul></li>
+</ul>
+</li>
 <li>Discord
-
 <ul>
 <li>異常時の通知先</li>
 <li>Slackのようなチャットツール</li>
-</ul></li>
 </ul>
-
-<p><img src="/images/20191115T20/Architecture_fin.jpg" alt="final" /></p>
-
+</li>
+</ul>
+<p><img src="/images/20191115T20/Architecture_fin.jpg" alt="final"></p>
 <p>以下の画像は実際に異常状態を発生させ、Discordに通知した時の画像です。
-<img src="/images/20191115T20/discord.png" alt="discord" /></p>
-
+<img src="/images/20191115T20/discord.png" alt="discord"></p>
 <h2 id="aws-cdk関連">AWS CDK関連&nbsp;<a class="anchor" href="#aws-cdk関連"><i class="small linkify icon"></i></a> </h2>
-
 <p>この規模の場合、AWS CDKで生成したCloudFormationの設定ファイルは330行でした。しかしAWS CDKを用いてTypescriptで書いたコードは遥かに少なく済みました。だいたい100行程度ですが、クラスの定義や空行、メソッド呼び出し時の引数の改行などを除けば更に少なくなります。記述量が少ないことはとても良いことです！</p>
-
 <p>また下記はAWS CDKでデプロイした際のログです。一応貼っておきます。ログからはリソース名は削除し、行数が多いので一部行も削除してあります。</p>
-
-<pre><code>  0/16 | 18:19:06 | CREATE_IN_PROGRESS   | AWS::IAM::Role                  
+<pre tabindex="0"><code>  0/16 | 18:19:06 | CREATE_IN_PROGRESS   | AWS::IAM::Role                  
   0/16 | 18:19:06 | CREATE_IN_PROGRESS   | AWS::IAM::Role                  
   0/16 | 18:19:06 | CREATE_IN_PROGRESS   | AWS::SQS::Queue                 
   0/16 | 18:19:06 | CREATE_IN_PROGRESS   | AWS::CDK::Metadata              
@@ -961,22 +917,14 @@ function getRandomInt(min, max) {
  14/16 | 18:20:19 | CREATE_COMPLETE      | AWS::SQS::QueuePolicy           
  15/16 | 18:20:21 | CREATE_COMPLETE      | AWS::Lambda::EventSourceMapping 
  16/16 | 18:20:22 | CREATE_COMPLETE      | AWS::CloudFormation::Stack  
-</code></pre>
-
-<h1 id="おわりに">おわりに&nbsp;<a class="anchor" href="#おわりに"><i class="small linkify icon"></i></a> </h1>
-
-<hr />
-
+</code></pre><h1 id="おわりに">おわりに&nbsp;<a class="anchor" href="#おわりに"><i class="small linkify icon"></i></a> </h1>
+<hr>
 <p>アーキテクチャの改良を行い、AWS CDKでプロビジョニングするようにしました。</p>
-
 <p>今夏に正式リリースされたAWS CDKの所感は、従来のCloudFormationの設定ファイルを書くこと無く、透過的にCloudFormationを扱うことが可能で、さらに学習コストも低いので非常に優秀なフレームワークでした。プロジェクトに存在するCloudFormationの醸成した設定ファイルを置き換える必要性は低いですが、新規作成していくのであれば、採用するに値するフレームワークだと考えています。</p>
-
 <p>正式リリースされたのは今夏でまだまだ使用例は少ないですが、採用は今後どんどん増えていくと思います。
 それと同時にIaaSのワードが再び盛り上がるでしょう。</p>
-
 <p>なお、そもそもこのアーキテクチャで動かしているBotですが、Bot運用(ツイート開始)で約10日が経ち、その中でちょっと盛り上がったツイートのアナリティクスは以下の通りでした😃</p>
-
-<p><img src="/images/20191115T20/tweet.png" alt="origin" /></p>
+<p><img src="/images/20191115T20/tweet.png" alt="origin"></p>
 
 				</article>				
 			</section>
@@ -990,9 +938,9 @@ function getRandomInt(min, max) {
 
 
 	
-		<a class="ui label green " href="/tags/aws" title="Aws">Aws</a>
+		<a class="ui label blue " href="/tags/aws" title="Aws">Aws</a>
 	
-		<a class="ui label orange " href="/tags/cdk" title="Cdk">Cdk</a>
+		<a class="ui label olive " href="/tags/cdk" title="Cdk">Cdk</a>
 	
 
 
@@ -1024,17 +972,28 @@ function getRandomInt(min, max) {
 </div>
 
 
-<section class="buttons row box">
-	<div class="facebook none flexbox" href="#" onclick="window.open(
-			'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
-			'facebook-share-dialog',
-			'width=626,height=436'); return false;">
-		<button class="ui facebook button"><i class="facebook icon"></i>Share</button>
+<div class="share row box">
+	<div class="sixteen wide mobile eight wide tablet four wide computer column">
+		<div class="facebook flexbox" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http:\/\/localhost:59877\/posts\/20191115t20\/','_self')">
+			<i class="facebook icon"></i>
+		</div>
 	</div>
-	<div class="twitter none flexbox" onclick="window.open('https://twitter.com/intent/tweet?text=Read &quot;AWS CDKによるプロビジョニング化  http:\/\/ta08.github.io\/posts\/20191115t20\/','_self')">
-		<button class="ui twitter button"><i class="twitter icon"></i>Tweet</button>
+	<div class="sixteen wide mobile eight wide tablet four wide computer column">
+		<div class="twitter none flexbox" onclick="window.open('https://twitter.com/intent/tweet?text=Read &quot;AWS CDKによるプロビジョニング化  http:\/\/localhost:59877\/posts\/20191115t20\/','_self')">
+			<i class="twitter icon"></i>
+		</div>
 	</div>
-</section>
+	<div class="sixteen wide mobile eight wide tablet four wide computer column">
+		<div class="linkedin none flexbox" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url=http:\/\/localhost:59877\/posts\/20191115t20\/&title=AWS CDKによるプロビジョニング化&summary=&source=ブログ的な何か','_self')">
+			<i class="linkedin icon"></i>
+		</div>
+	</div>
+	<div class="sixteen wide mobile eight wide tablet four wide computer column">
+		<div class="reddit none flexbox" onclick="window.open('https://reddit.com/submit?url=http:\/\/localhost:59877\/posts\/20191115t20\/&title=AWS CDKによるプロビジョニング化','_self')">
+			<i class="reddit icon"></i>
+		</div>
+	</div>
+</div>
 
 				</section>
 			
@@ -1050,7 +1009,7 @@ function getRandomInt(min, max) {
 <div id="disqus_thread"></div>
 <script>
 	var disqus_config = function () {
-		this.page.url = 'http:\/\/ta08.github.io\/posts\/20191115t20\/';
+		this.page.url = 'http:\/\/localhost:59877\/posts\/20191115t20\/';
 		this.page.identifier = '77628a3644f2ecf5dfb5463703275d61';
 	};
 	(function() {
@@ -1075,70 +1034,18 @@ function getRandomInt(min, max) {
 		<i class="inverted big link bullseye icon dream-flip-toggle" title="About Me"></i>
 	</div>
 	
-		
 	
-		
+		<a class="item" href="E3OWVIN571QZ" target="_blank">
+			<i class="amazon icon"></i>
+		</a>
 	
-		
+		<a class="item" href="ta08" target="_blank">
+			<i class="gist icon"></i>
+		</a>
 	
-
-	
-	
-	
-	
-	
-	
-	
-		
-		
-			<div class="item">
-				<a href="https://github.com/ta08" target="	_blank">
-					<i id="ico" class="inverted big link github icon" title="GitHub"></i>
-				</a>
-			</div>
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-			<div class="item">
-				<a href="https://gist.github.com/ta08" target="	_blank">
-					<i id="ico" class="inverted big link github alternate icon" title="gist"></i>
-				</a>
-			</div>
-		
-	
-		
-		
-			<div class="item">
-				<a href="https://www.amazon.co.jp/hz/wishlist/ls/E3OWVIN571QZ" target="	_blank">
-					<i id="ico" class="inverted big link amazon icon" title="amazon"></i>
-				</a>
-			</div>
-		
+		<a class="item" href="ta08" target="_blank">
+			<i class="github icon"></i>
+		</a>
 	
 </nav>
 
@@ -1149,31 +1056,22 @@ function getRandomInt(min, max) {
 		<section class="ui stacked segments">
 			<div class="ui inverted segment">
 				<article class="twemoji">
-					<h1 id="about-me">About Me 🐝</h1>
-
+					<h1 id="about-me-">About Me 🐝</h1>
 <p>👤 💓 🍕🍣🍰🍈.</p>
-
-<h2 id="as-a-software-engineer">As a Software Engineer 🌸</h2>
-
+<h2 id="as-a-software-engineer-">As a Software Engineer 🌸</h2>
 <p>I&rsquo;m a software engineer, spending the most time as a back-ends engineer.</p>
-
 <p>Speaking of programming languages, I have experiences with Scala, Java, Python, Typescript at work.</p>
-
 <p>But not only these programming languages, I have experiences with other programming languages in my private time.</p>
-
-<h2 id="education">Education 🎓</h2>
-
+<h2 id="education-">Education 🎓</h2>
 <ul>
 <li>Bachelor of Computer Science</li>
 <li>Master of Computer Science
-
 <ul>
 <li>especially NLP</li>
-</ul></li>
 </ul>
-
-<h2 id="tech-interests">Tech Interests ⭐✨✨</h2>
-
+</li>
+</ul>
+<h2 id="tech-interests-">Tech Interests ⭐✨✨</h2>
 <ul>
 <li>Natural Language Processing</li>
 <li>Functional Programming</li>
@@ -1215,7 +1113,6 @@ function getRandomInt(min, max) {
 
 
 		
-
 
 		
 

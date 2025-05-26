@@ -1,24 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>blog on ブログ的な何か</title>
-    <link>http://ta08.github.io/tags/blog/</link>
-    <description>Recent content in blog on ブログ的な何か</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Blog on ブログ的な何か</title>
+    <link>http://localhost:59877/tags/blog/</link>
+    <description>Recent content in Blog on ブログ的な何か</description>
+    <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Tue, 20 Aug 2019 00:16:48 +0900</lastBuildDate>
-    
-	<atom:link href="http://ta08.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://localhost:59877/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugoでブログ作成</title>
-      <link>http://ta08.github.io/posts/first-post/</link>
+      <link>http://localhost:59877/posts/first-post/</link>
       <pubDate>Tue, 20 Aug 2019 00:16:48 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/posts/first-post/</guid>
-      <description>要点 Hugoで静的サイトを作成し、Github Pagesで公開した。 はじめに Github Pagesでサイトを公開する一覧の流れを経験してみたかった。 ま</description>
+      <guid>http://localhost:59877/posts/first-post/</guid>
+      <description>&lt;h1 id=&#34;要点&#34;&gt;要点&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Hugoで静的サイトを作成し、Github Pagesで公開した。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:59877/images/20190823T17-1.png&#34; alt=&#34;localhostでの表示&#34;&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Github Pagesでサイトを公開する一覧の流れを経験してみたかった。&lt;/p&gt;&#xA;&lt;p&gt;またGithubアカウントに紐付いたサイトとなるため、「ポートフォリオ」「ポートフォリオ＋ブログ」「ブログ」にするか悩んでおり、テーマの変更で簡単に後から切り替えられ、変更コストが低そうなツールを用いてサイトを構築したかった。&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

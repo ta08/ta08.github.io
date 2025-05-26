@@ -1,260 +1,163 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>http://ta08.github.io/tags/aws/</loc>
+    <loc>http://localhost:59877/tags/aws/</loc>
+    <lastmod>2025-05-25T20:36:44+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:59877/categories/</loc>
+    <lastmod>2025-05-25T20:36:44+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:59877/tags/chatgpt/</loc>
+    <lastmod>2025-05-25T20:36:44+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:59877/posts/</loc>
+    <lastmod>2025-05-25T20:36:44+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:59877/tags/</loc>
+    <lastmod>2025-05-25T20:36:44+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:59877/categories/tech/</loc>
+    <lastmod>2025-05-25T20:36:44+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:59877/</loc>
+    <lastmod>2025-05-25T20:36:44+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:59877/posts/20250525t20/</loc>
+    <lastmod>2025-05-25T20:36:44+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:59877/posts/20191115t20/</loc>
     <lastmod>2019-11-15T17:00:12+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/posts/20191115t20/</loc>
+  </url><url>
+    <loc>http://localhost:59877/categories/aws_bot/</loc>
     <lastmod>2019-11-15T17:00:12+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/categories/aws_bot/</loc>
+  </url><url>
+    <loc>http://localhost:59877/tags/cdk/</loc>
     <lastmod>2019-11-15T17:00:12+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/categories/</loc>
-    <lastmod>2019-11-15T17:00:12+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/tags/cdk/</loc>
-    <lastmod>2019-11-15T17:00:12+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/posts/</loc>
-    <lastmod>2019-11-15T17:00:12+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/tags/</loc>
-    <lastmod>2019-11-15T17:00:12+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/categories/tech/</loc>
-    <lastmod>2019-11-15T17:00:12+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/</loc>
-    <lastmod>2019-11-15T17:00:12+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/tags/asana/</loc>
+  </url><url>
+    <loc>http://localhost:59877/tags/asana/</loc>
     <lastmod>2019-11-06T22:41:08+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/categories/info/</loc>
+  </url><url>
+    <loc>http://localhost:59877/categories/info/</loc>
     <lastmod>2019-11-06T22:41:08+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/tags/jira/</loc>
+  </url><url>
+    <loc>http://localhost:59877/tags/jira/</loc>
     <lastmod>2019-11-06T22:41:08+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/posts/20191106t22/</loc>
+  </url><url>
+    <loc>http://localhost:59877/posts/20191106t22/</loc>
     <lastmod>2019-11-06T22:41:08+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/posts/20191016t01/</loc>
+  </url><url>
+    <loc>http://localhost:59877/posts/20191016t01/</loc>
     <lastmod>2019-10-16T01:33:47+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/tags/twitter/</loc>
+  </url><url>
+    <loc>http://localhost:59877/tags/twitter/</loc>
     <lastmod>2019-10-16T01:33:47+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/tags/gas/</loc>
+  </url><url>
+    <loc>http://localhost:59877/tags/gas/</loc>
     <lastmod>2019-09-30T02:07:57+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/categories/gas_siri/</loc>
+  </url><url>
+    <loc>http://localhost:59877/categories/gas_siri/</loc>
     <lastmod>2019-09-30T02:07:57+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/tags/siri/</loc>
+  </url><url>
+    <loc>http://localhost:59877/tags/siri/</loc>
     <lastmod>2019-09-30T02:07:57+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/posts/20190930t02/</loc>
+  </url><url>
+    <loc>http://localhost:59877/posts/20190930t02/</loc>
     <lastmod>2019-09-30T02:07:57+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/tags/typescript/</loc>
+  </url><url>
+    <loc>http://localhost:59877/tags/typescript/</loc>
     <lastmod>2019-09-30T02:07:57+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/tags/ci/</loc>
+  </url><url>
+    <loc>http://localhost:59877/tags/ci/</loc>
     <lastmod>2019-09-24T23:39:12+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/tags/documentation/</loc>
+  </url><url>
+    <loc>http://localhost:59877/tags/documentation/</loc>
     <lastmod>2019-09-24T23:39:12+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/tags/girepo/</loc>
+  </url><url>
+    <loc>http://localhost:59877/categories/girepo/</loc>
     <lastmod>2019-09-24T23:39:12+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/categories/girepo/</loc>
+  </url><url>
+    <loc>http://localhost:59877/tags/girepo/</loc>
     <lastmod>2019-09-24T23:39:12+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/tags/markdown/</loc>
+  </url><url>
+    <loc>http://localhost:59877/tags/markdown/</loc>
     <lastmod>2019-09-24T23:39:12+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/tags/tool/</loc>
+  </url><url>
+    <loc>http://localhost:59877/tags/tool/</loc>
     <lastmod>2019-09-24T23:39:12+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/posts/20190924t23/</loc>
+  </url><url>
+    <loc>http://localhost:59877/posts/20190924t23/</loc>
     <lastmod>2019-09-24T23:39:12+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/posts/20190914t04/</loc>
+  </url><url>
+    <loc>http://localhost:59877/posts/20190914t04/</loc>
     <lastmod>2019-09-14T04:01:56+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/tags/%E8%87%AA%E4%BD%9Cpc/</loc>
+  </url><url>
+    <loc>http://localhost:59877/tags/%E8%87%AA%E4%BD%9Cpc/</loc>
     <lastmod>2019-09-14T04:01:56+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/posts/20190908t00/</loc>
+  </url><url>
+    <loc>http://localhost:59877/posts/20190908t00/</loc>
     <lastmod>2019-09-08T00:42:11+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/tags/jupyter/</loc>
+  </url><url>
+    <loc>http://localhost:59877/tags/jupyter/</loc>
     <lastmod>2019-09-05T13:19:59+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/tags/nlp/</loc>
+  </url><url>
+    <loc>http://localhost:59877/tags/nlp/</loc>
     <lastmod>2019-09-05T13:19:59+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/tags/notebook/</loc>
+  </url><url>
+    <loc>http://localhost:59877/tags/notebook/</loc>
     <lastmod>2019-09-05T13:19:59+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/posts/20190905t13/</loc>
+  </url><url>
+    <loc>http://localhost:59877/posts/20190905t13/</loc>
     <lastmod>2019-09-05T13:19:59+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/posts/20190902t21/</loc>
+  </url><url>
+    <loc>http://localhost:59877/posts/20190902t21/</loc>
     <lastmod>2019-09-02T21:07:15+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/tags/python/</loc>
+  </url><url>
+    <loc>http://localhost:59877/tags/python/</loc>
     <lastmod>2019-09-02T21:07:15+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/posts/20190901t07/</loc>
+  </url><url>
+    <loc>http://localhost:59877/posts/20190901t07/</loc>
     <lastmod>2019-09-01T07:59:23+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/tags/canvas/</loc>
+  </url><url>
+    <loc>http://localhost:59877/tags/canvas/</loc>
     <lastmod>2019-08-27T21:09:55+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/tags/processing/</loc>
+  </url><url>
+    <loc>http://localhost:59877/tags/processing/</loc>
     <lastmod>2019-08-27T21:09:55+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/posts/20190827t21/</loc>
+  </url><url>
+    <loc>http://localhost:59877/posts/20190827t21/</loc>
     <lastmod>2019-08-27T21:09:55+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/tags/elasticsearch/</loc>
+  </url><url>
+    <loc>http://localhost:59877/tags/elasticsearch/</loc>
     <lastmod>2019-08-23T23:49:01+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/tags/grafana/</loc>
+  </url><url>
+    <loc>http://localhost:59877/tags/grafana/</loc>
     <lastmod>2019-08-23T23:49:01+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/tags/kibana/</loc>
+  </url><url>
+    <loc>http://localhost:59877/tags/kibana/</loc>
     <lastmod>2019-08-23T23:49:01+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/tags/network/</loc>
+  </url><url>
+    <loc>http://localhost:59877/tags/network/</loc>
     <lastmod>2019-08-23T23:49:01+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/tags/visualization/</loc>
+  </url><url>
+    <loc>http://localhost:59877/tags/visualization/</loc>
     <lastmod>2019-08-23T23:49:01+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/posts/20190823t23/</loc>
+  </url><url>
+    <loc>http://localhost:59877/posts/20190823t23/</loc>
     <lastmod>2019-08-23T23:49:01+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/tags/blog/</loc>
+  </url><url>
+    <loc>http://localhost:59877/tags/blog/</loc>
     <lastmod>2019-08-20T00:16:48+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/tags/deploy/</loc>
+  </url><url>
+    <loc>http://localhost:59877/tags/deploy/</loc>
     <lastmod>2019-08-20T00:16:48+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/tags/hugo/</loc>
+  </url><url>
+    <loc>http://localhost:59877/tags/hugo/</loc>
     <lastmod>2019-08-20T00:16:48+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ta08.github.io/posts/first-post/</loc>
+  </url><url>
+    <loc>http://localhost:59877/posts/first-post/</loc>
     <lastmod>2019-08-20T00:16:48+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:59877/about/</loc>
   </url>
-  
-  <url>
-    <loc>http://ta08.github.io/about/</loc>
-    <priority>0</priority>
-  </url>
-  
 </urlset>

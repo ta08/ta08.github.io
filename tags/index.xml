@@ -1,267 +1,215 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on ブログ的な何か</title>
-    <link>http://ta08.github.io/tags/</link>
+    <link>http://localhost:59877/tags/</link>
     <description>Recent content in Tags on ブログ的な何か</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 15 Nov 2019 17:00:12 +0900</lastBuildDate>
-    
-	<atom:link href="http://ta08.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 25 May 2025 20:36:44 +0900</lastBuildDate>
+    <atom:link href="http://localhost:59877/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Aws</title>
-      <link>http://ta08.github.io/tags/aws/</link>
-      <pubDate>Fri, 15 Nov 2019 17:00:12 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/tags/aws/</guid>
+      <link>http://localhost:59877/tags/aws/</link>
+      <pubDate>Sun, 25 May 2025 20:36:44 +0900</pubDate>
+      <guid>http://localhost:59877/tags/aws/</guid>
       <description></description>
     </item>
-    
+    <item>
+      <title>Chatgpt</title>
+      <link>http://localhost:59877/tags/chatgpt/</link>
+      <pubDate>Sun, 25 May 2025 20:36:44 +0900</pubDate>
+      <guid>http://localhost:59877/tags/chatgpt/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Cdk</title>
-      <link>http://ta08.github.io/tags/cdk/</link>
+      <link>http://localhost:59877/tags/cdk/</link>
       <pubDate>Fri, 15 Nov 2019 17:00:12 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/tags/cdk/</guid>
+      <guid>http://localhost:59877/tags/cdk/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Asana</title>
-      <link>http://ta08.github.io/tags/asana/</link>
+      <link>http://localhost:59877/tags/asana/</link>
       <pubDate>Wed, 06 Nov 2019 22:41:08 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/tags/asana/</guid>
+      <guid>http://localhost:59877/tags/asana/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Jira</title>
-      <link>http://ta08.github.io/tags/jira/</link>
+      <link>http://localhost:59877/tags/jira/</link>
       <pubDate>Wed, 06 Nov 2019 22:41:08 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/tags/jira/</guid>
+      <guid>http://localhost:59877/tags/jira/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Twitter</title>
-      <link>http://ta08.github.io/tags/twitter/</link>
+      <link>http://localhost:59877/tags/twitter/</link>
       <pubDate>Wed, 16 Oct 2019 01:33:47 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/tags/twitter/</guid>
+      <guid>http://localhost:59877/tags/twitter/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>GAS</title>
-      <link>http://ta08.github.io/tags/gas/</link>
+      <link>http://localhost:59877/tags/gas/</link>
       <pubDate>Mon, 30 Sep 2019 02:07:57 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/tags/gas/</guid>
+      <guid>http://localhost:59877/tags/gas/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Siri</title>
-      <link>http://ta08.github.io/tags/siri/</link>
+      <link>http://localhost:59877/tags/siri/</link>
       <pubDate>Mon, 30 Sep 2019 02:07:57 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/tags/siri/</guid>
+      <guid>http://localhost:59877/tags/siri/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Typescript</title>
-      <link>http://ta08.github.io/tags/typescript/</link>
+      <link>http://localhost:59877/tags/typescript/</link>
       <pubDate>Mon, 30 Sep 2019 02:07:57 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/tags/typescript/</guid>
+      <guid>http://localhost:59877/tags/typescript/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>CI</title>
-      <link>http://ta08.github.io/tags/ci/</link>
+      <link>http://localhost:59877/tags/ci/</link>
       <pubDate>Tue, 24 Sep 2019 23:39:12 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/tags/ci/</guid>
+      <guid>http://localhost:59877/tags/ci/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Documentation</title>
-      <link>http://ta08.github.io/tags/documentation/</link>
+      <link>http://localhost:59877/tags/documentation/</link>
       <pubDate>Tue, 24 Sep 2019 23:39:12 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/tags/documentation/</guid>
+      <guid>http://localhost:59877/tags/documentation/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Girepo</title>
-      <link>http://ta08.github.io/tags/girepo/</link>
+      <link>http://localhost:59877/tags/girepo/</link>
       <pubDate>Tue, 24 Sep 2019 23:39:12 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/tags/girepo/</guid>
+      <guid>http://localhost:59877/tags/girepo/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Markdown</title>
-      <link>http://ta08.github.io/tags/markdown/</link>
+      <link>http://localhost:59877/tags/markdown/</link>
       <pubDate>Tue, 24 Sep 2019 23:39:12 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/tags/markdown/</guid>
+      <guid>http://localhost:59877/tags/markdown/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Tool</title>
-      <link>http://ta08.github.io/tags/tool/</link>
+      <link>http://localhost:59877/tags/tool/</link>
       <pubDate>Tue, 24 Sep 2019 23:39:12 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/tags/tool/</guid>
+      <guid>http://localhost:59877/tags/tool/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>自作pc</title>
-      <link>http://ta08.github.io/tags/%E8%87%AA%E4%BD%9Cpc/</link>
+      <link>http://localhost:59877/tags/%E8%87%AA%E4%BD%9Cpc/</link>
       <pubDate>Sat, 14 Sep 2019 04:01:56 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/tags/%E8%87%AA%E4%BD%9Cpc/</guid>
+      <guid>http://localhost:59877/tags/%E8%87%AA%E4%BD%9Cpc/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Jupyter</title>
-      <link>http://ta08.github.io/tags/jupyter/</link>
+      <link>http://localhost:59877/tags/jupyter/</link>
       <pubDate>Thu, 05 Sep 2019 13:19:59 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/tags/jupyter/</guid>
+      <guid>http://localhost:59877/tags/jupyter/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>NLP</title>
-      <link>http://ta08.github.io/tags/nlp/</link>
+      <link>http://localhost:59877/tags/nlp/</link>
       <pubDate>Thu, 05 Sep 2019 13:19:59 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/tags/nlp/</guid>
+      <guid>http://localhost:59877/tags/nlp/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Notebook</title>
-      <link>http://ta08.github.io/tags/notebook/</link>
+      <link>http://localhost:59877/tags/notebook/</link>
       <pubDate>Thu, 05 Sep 2019 13:19:59 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/tags/notebook/</guid>
+      <guid>http://localhost:59877/tags/notebook/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Python</title>
-      <link>http://ta08.github.io/tags/python/</link>
+      <link>http://localhost:59877/tags/python/</link>
       <pubDate>Mon, 02 Sep 2019 21:07:15 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/tags/python/</guid>
+      <guid>http://localhost:59877/tags/python/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Canvas</title>
-      <link>http://ta08.github.io/tags/canvas/</link>
+      <link>http://localhost:59877/tags/canvas/</link>
       <pubDate>Tue, 27 Aug 2019 21:09:55 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/tags/canvas/</guid>
+      <guid>http://localhost:59877/tags/canvas/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Processing</title>
-      <link>http://ta08.github.io/tags/processing/</link>
+      <link>http://localhost:59877/tags/processing/</link>
       <pubDate>Tue, 27 Aug 2019 21:09:55 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/tags/processing/</guid>
+      <guid>http://localhost:59877/tags/processing/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Elasticsearch</title>
-      <link>http://ta08.github.io/tags/elasticsearch/</link>
+      <link>http://localhost:59877/tags/elasticsearch/</link>
       <pubDate>Fri, 23 Aug 2019 23:49:01 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/tags/elasticsearch/</guid>
+      <guid>http://localhost:59877/tags/elasticsearch/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Grafana</title>
-      <link>http://ta08.github.io/tags/grafana/</link>
+      <link>http://localhost:59877/tags/grafana/</link>
       <pubDate>Fri, 23 Aug 2019 23:49:01 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/tags/grafana/</guid>
+      <guid>http://localhost:59877/tags/grafana/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Kibana</title>
-      <link>http://ta08.github.io/tags/kibana/</link>
+      <link>http://localhost:59877/tags/kibana/</link>
       <pubDate>Fri, 23 Aug 2019 23:49:01 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/tags/kibana/</guid>
+      <guid>http://localhost:59877/tags/kibana/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Network</title>
-      <link>http://ta08.github.io/tags/network/</link>
+      <link>http://localhost:59877/tags/network/</link>
       <pubDate>Fri, 23 Aug 2019 23:49:01 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/tags/network/</guid>
+      <guid>http://localhost:59877/tags/network/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Visualization</title>
-      <link>http://ta08.github.io/tags/visualization/</link>
+      <link>http://localhost:59877/tags/visualization/</link>
       <pubDate>Fri, 23 Aug 2019 23:49:01 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/tags/visualization/</guid>
+      <guid>http://localhost:59877/tags/visualization/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>blog</title>
-      <link>http://ta08.github.io/tags/blog/</link>
+      <title>Blog</title>
+      <link>http://localhost:59877/tags/blog/</link>
       <pubDate>Tue, 20 Aug 2019 00:16:48 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/tags/blog/</guid>
+      <guid>http://localhost:59877/tags/blog/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>deploy</title>
-      <link>http://ta08.github.io/tags/deploy/</link>
+      <title>Deploy</title>
+      <link>http://localhost:59877/tags/deploy/</link>
       <pubDate>Tue, 20 Aug 2019 00:16:48 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/tags/deploy/</guid>
+      <guid>http://localhost:59877/tags/deploy/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Hugo</title>
-      <link>http://ta08.github.io/tags/hugo/</link>
+      <link>http://localhost:59877/tags/hugo/</link>
       <pubDate>Tue, 20 Aug 2019 00:16:48 +0900</pubDate>
-      
-      <guid>http://ta08.github.io/tags/hugo/</guid>
+      <guid>http://localhost:59877/tags/hugo/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=59877&amp;path=livereload" data-no-instant defer></script>
+		<title>
+	社内の技術シンポジウム用スライド
+</title>
+		<style>
+	body, body.pushable {
+		background-repeat: no-repeat;
+	  	background-attachment: fixed;
+	  	background-size: cover !important;
+	}
+</style>
+
+		<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+	
+	
+	
+	<meta name="author" content="ta08" />
+	<meta name="description" content="要点 2024 年末の社内技術シンポジウムで提出したスライド「AWS CDK によるプロビジョニング自動化」を公開します。
+前半：自身のブログ記事 URL を生成 AI に渡し、人の手を一切入れずに作成したスライド。 後半：そのタネ明かしと、生成 AI に関する内容を私が手動で執筆したスライド。こちらが本命。
+ちなみにこの発表は 新人賞 を頂きました。🎉
+（ブログ掲載にあたり、タイトルスライドの個人情報は削除済みです。チーム名とありますが、ソロプレイヤーです…。） 生成 AIについて 登場からわずか数年で、中学生でも名前を知るほど普及したのが生成 AI です。
+技術革新と普及スピードがあまりに速いため、ここで紹介する内容もすぐ「当たり前」になるかもしれません。とはいえ、
+" />
+
+
+
+<meta name="generator" content="Hugo 0.146.5">
+
+
+<link rel="shortcut icon" href="/img/defaultFav.ico">
+
+
+
+
+		
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+
+ <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Inconsolata" rel="stylesheet">
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/site.css">
+
+
+
+
+
+
+
+
+<style>
+	body.pushable {
+		display: block;
+		
+			background-image: var(--bgImage) !important;
+		 ;
+	}
+</style>
+
+
+
+<script>
+	
+	var isMobile = ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+	console.log("The client device is a "+(isMobile?"mobile":"PC")+".")
+</script>
+
+	</head>
+
+	<body>
+		<script>
+var prevBgIndex = 0;
+var bodyBgSwitchIndex = 0;
+
+
+
+
+
+
+	
+		document.body.style.backgroundColor = "#5EBABA";
+	
+
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  var random;
+  while (1) {
+    random = Math.floor(Math.random() * (max - min)) + min;
+    if (random !== prevBgIndex) {
+      prevBgIndex = random;
+      break;
+    }
+  }
+  return random;
+}
+</script>
+
+
+
+	<div class="blur-overlay"></div>
+
+
+		<div id="sidebar" class="ui sidebar inverted vertical menu">
+	
+	<section id="author" class="ui top attached center aligned inverted segment">
+		
+<div class="ui small circular image">
+	
+		<img src="https://avatars1.githubusercontent.com/u/16427109?s=400&amp;v=4">
+	
+</div>
+
+
+<h3 class="ui header">
+	ta08
+	<div class="sub header">I&#39;m looking for ways to make the world more efficient and efficient. This blog aims to share my knowledge and what I had created.</div>
+</h3>
+
+	</section>
+
+	
+	
+		<section class="ui attached center aligned inverted segment sidebar-dream-tags">
+			
+			
+			
+			
+
+
+
+
+	
+	
+		
+			
+			<a class="ui label brown " href="/tags/aws" title="aws">aws</a>
+		
+			
+			<a class="ui label olive " href="/tags/documentation" title="documentation">documentation</a>
+		
+			
+			<a class="ui label pink " href="/tags/gas" title="gas">gas</a>
+		
+			
+			<a class="ui label pink " href="/tags/girepo" title="girepo">girepo</a>
+		
+			
+			<a class="ui label green " href="/tags/markdown" title="markdown">markdown</a>
+		
+			
+			<a class="ui label purple " href="/tags/siri" title="siri">siri</a>
+		
+			
+			<a class="ui label blue " href="/tags/tool" title="tool">tool</a>
+		
+			
+			<a class="ui label teal " href="/tags/twitter" title="twitter">twitter</a>
+		
+			
+			<a class="ui label yellow " href="/tags/typescript" title="typescript">typescript</a>
+		
+			
+			<a class="ui label red " href="/tags/asana" title="asana">asana</a>
+		
+	
+
+
+		</section>
+	
+
+	
+	
+		<section class="ui attached inverted segment sidebar-dream-categories both flexbox">
+			<div class="ui inverted accordion">
+				
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/aws_bot">aws_bot</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="http://localhost:59877/posts/20191115t20/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>AWS CDKによるプロビジョニング化</p>
+				</div>
+			</a>
+		
+			<a class="item" href="http://localhost:59877/posts/20191016t01/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>LambdaとIFTTTでBotの作成</p>
+				</div>
+			</a>
+		
+	</div>
+
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/gas_siri">gas_siri</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="http://localhost:59877/posts/20190930t02/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>SiriとGASを用いて音声入力による記録自動化2</p>
+				</div>
+			</a>
+		
+			<a class="item" href="http://localhost:59877/posts/20190908t00/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>SiriとGASを用いて音声入力による記録自動化</p>
+				</div>
+			</a>
+		
+	</div>
+
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/girepo">girepo</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="http://localhost:59877/posts/20190924t23/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>公開したToolの機能追加とCIの設定</p>
+				</div>
+			</a>
+		
+			<a class="item" href="http://localhost:59877/posts/20190901t07/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>調査補助ツールの作成と公開</p>
+				</div>
+			</a>
+		
+	</div>
+
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/info">info</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="http://localhost:59877/posts/20191106t22/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>TODOツールをAsanaからJiraに移行</p>
+				</div>
+			</a>
+		
+			<a class="item" href="http://localhost:59877/posts/20190914t04/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>BTOサイト比較とPCの修理</p>
+				</div>
+			</a>
+		
+	</div>
+
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/tech">tech</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="http://localhost:59877/posts/20250525t20/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>社内の技術シンポジウム用スライド</p>
+				</div>
+			</a>
+		
+			<a class="item" href="http://localhost:59877/posts/20191115t20/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>AWS CDKによるプロビジョニング化</p>
+				</div>
+			</a>
+		
+			<a class="item" href="http://localhost:59877/posts/20191016t01/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>LambdaとIFTTTでBotの作成</p>
+				</div>
+			</a>
+		
+			<a class="item" href="http://localhost:59877/posts/20190930t02/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>SiriとGASを用いて音声入力による記録自動化2</p>
+				</div>
+			</a>
+		
+			<a class="item" href="http://localhost:59877/posts/20190924t23/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>公開したToolの機能追加とCIの設定</p>
+				</div>
+			</a>
+		
+			<a class="item" href="http://localhost:59877/posts/20190908t00/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>SiriとGASを用いて音声入力による記録自動化</p>
+				</div>
+			</a>
+		
+			<a class="item" href="http://localhost:59877/posts/20190905t13/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>なろうAPIで自然言語処理をするノートブック公開</p>
+				</div>
+			</a>
+		
+			<a class="item" href="http://localhost:59877/posts/20190902t21/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>AWSJPの無料キャンペーン通知</p>
+				</div>
+			</a>
+		
+			<a class="item" href="http://localhost:59877/posts/20190901t07/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>調査補助ツールの作成と公開</p>
+				</div>
+			</a>
+		
+			<a class="item" href="http://localhost:59877/posts/20190827t21/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>Processingでビジュアルアート</p>
+				</div>
+			</a>
+		
+			<a class="item" href="http://localhost:59877/posts/20190823t23/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>自宅ネットワークの不調を可視化</p>
+				</div>
+			</a>
+		
+			<a class="item" href="http://localhost:59877/posts/first-post/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>Hugoでブログ作成</p>
+				</div>
+			</a>
+		
+	</div>
+
+
+			</div>
+		</section>
+	
+
+	
+	<section id="footer" class="ui bottom attached center aligned inverted segment">
+		
+
+	<p>© 2019 - 2025 ブログ的な何か</p>
+
+
+<p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with <a href="https://github.com/UtkarshVerma/hugo-dream-plus" target="_blank">Dream Plus</a> theme.</p>
+
+	</section>
+</div>
+
+
+		<div class="pusher">
+			<div class="flipper">
+				<div class="front">
+					
+	<nav class="ui top secondary menu bar">
+	
+	<div class="item">
+		<i class="inverted big link bullseye icon dream-flip-toggle" title="About Me"></i>
+	</div>
+
+	
+	
+		<div class="item">
+			<a href="/">
+				<i class="inverted big link home icon" title="Home"></i>
+			</a>
+		</div>
+	
+
+	
+	
+
+	
+	
+		<div class="item">
+			<a href="/tags">
+				<i class="inverted big link tags icon" title="All Tags"></i>
+			</a>
+		</div>
+	
+
+	
+	
+		<div class="item">
+			<a href="/categories">
+				<i class="inverted big link cubes icon" title="All Categories"></i>
+			</a>
+    	</div>
+	
+
+	
+	
+
+	
+	
+		<div class="ui container tablet computer only grid">
+			<div class="item" onClick="$('.ui.sidebar').sidebar('setting', 'transition', 'overlay').sidebar('toggle');">
+				<i class="inverted big link sidebar icon" title="Show Sidebar"></i>
+			</div>
+		</div>
+	
+
+	
+	
+		<div class="item right">
+			<a href="/posts/index.xml">
+				<i class="inverted big link rss icon" title="RSS Feed"></i>
+			</a>
+		</div>
+	
+</nav>
+
+
+	<div class="ui centered grid">
+		
+		<div class="sixteen wide mobile only column">
+				<div class="ui inverted accordion">
+	<div id="header" class="ui inverted segment column box">		
+		
+		<header id="author" class="ui top attached center aligned inverted segment">
+			
+<div class="ui small circular image">
+	
+		<img src="https://avatars1.githubusercontent.com/u/16427109?s=400&amp;v=4">
+	
+</div>
+
+
+<h3 class="ui header">
+	ta08
+	<div class="sub header">I&#39;m looking for ways to make the world more efficient and efficient. This blog aims to share my knowledge and what I had created.</div>
+</h3>
+
+		</header>
+
+		
+		<div class=" title header-title">
+			
+				<div id="tag-category-pop" class="ui red right corner label">
+					<i class="hand point icon down" title="Show/hide tags and categories"></i>
+				</div>
+			
+		</div>
+		
+		
+		<div id="tag-category" class=" content">
+			
+				<section class="ui attached center aligned inverted segment dream-tags none flexbox">
+					
+					
+					
+
+
+
+
+	
+	
+		
+			
+			<a class="ui label green " href="/tags/aws" title="aws">aws</a>
+		
+			
+			<a class="ui label orange " href="/tags/documentation" title="documentation">documentation</a>
+		
+			
+			<a class="ui label pink " href="/tags/gas" title="gas">gas</a>
+		
+			
+			<a class="ui label brown " href="/tags/girepo" title="girepo">girepo</a>
+		
+			
+			<a class="ui label violet " href="/tags/markdown" title="markdown">markdown</a>
+		
+			
+			<a class="ui label yellow " href="/tags/siri" title="siri">siri</a>
+		
+			
+			<a class="ui label yellow " href="/tags/tool" title="tool">tool</a>
+		
+			
+			<a class="ui label pink " href="/tags/twitter" title="twitter">twitter</a>
+		
+			
+			<a class="ui label red " href="/tags/typescript" title="typescript">typescript</a>
+		
+			
+			<a class="ui label blue " href="/tags/asana" title="asana">asana</a>
+		
+	
+
+
+				</section>
+			
+
+			
+				<section class="ui attached inverted segment dream-categories both flexbox">
+					<div class="inverted accordion">
+						
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/aws_bot">aws_bot</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="http://localhost:59877/posts/20191115t20/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>AWS CDKによるプロビジョニング化</p>
+				</div>
+			</a>
+		
+			<a class="item" href="http://localhost:59877/posts/20191016t01/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>LambdaとIFTTTでBotの作成</p>
+				</div>
+			</a>
+		
+	</div>
+
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/gas_siri">gas_siri</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="http://localhost:59877/posts/20190930t02/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>SiriとGASを用いて音声入力による記録自動化2</p>
+				</div>
+			</a>
+		
+			<a class="item" href="http://localhost:59877/posts/20190908t00/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>SiriとGASを用いて音声入力による記録自動化</p>
+				</div>
+			</a>
+		
+	</div>
+
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/girepo">girepo</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="http://localhost:59877/posts/20190924t23/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>公開したToolの機能追加とCIの設定</p>
+				</div>
+			</a>
+		
+			<a class="item" href="http://localhost:59877/posts/20190901t07/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>調査補助ツールの作成と公開</p>
+				</div>
+			</a>
+		
+	</div>
+
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/info">info</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="http://localhost:59877/posts/20191106t22/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>TODOツールをAsanaからJiraに移行</p>
+				</div>
+			</a>
+		
+			<a class="item" href="http://localhost:59877/posts/20190914t04/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>BTOサイト比較とPCの修理</p>
+				</div>
+			</a>
+		
+	</div>
+
+	
+	<div class="title">
+		<i class="dropdown icon"></i>
+		<a class="link" href="/categories/tech">tech</a>
+	</div>
+
+	
+	<div class="content">
+		
+			<a class="item" href="http://localhost:59877/posts/20250525t20/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>社内の技術シンポジウム用スライド</p>
+				</div>
+			</a>
+		
+			<a class="item" href="http://localhost:59877/posts/20191115t20/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>AWS CDKによるプロビジョニング化</p>
+				</div>
+			</a>
+		
+			<a class="item" href="http://localhost:59877/posts/20191016t01/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>LambdaとIFTTTでBotの作成</p>
+				</div>
+			</a>
+		
+			<a class="item" href="http://localhost:59877/posts/20190930t02/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>SiriとGASを用いて音声入力による記録自動化2</p>
+				</div>
+			</a>
+		
+			<a class="item" href="http://localhost:59877/posts/20190924t23/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>公開したToolの機能追加とCIの設定</p>
+				</div>
+			</a>
+		
+			<a class="item" href="http://localhost:59877/posts/20190908t00/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>SiriとGASを用いて音声入力による記録自動化</p>
+				</div>
+			</a>
+		
+			<a class="item" href="http://localhost:59877/posts/20190905t13/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>なろうAPIで自然言語処理をするノートブック公開</p>
+				</div>
+			</a>
+		
+			<a class="item" href="http://localhost:59877/posts/20190902t21/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>AWSJPの無料キャンペーン通知</p>
+				</div>
+			</a>
+		
+			<a class="item" href="http://localhost:59877/posts/20190901t07/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>調査補助ツールの作成と公開</p>
+				</div>
+			</a>
+		
+			<a class="item" href="http://localhost:59877/posts/20190827t21/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>Processingでビジュアルアート</p>
+				</div>
+			</a>
+		
+			<a class="item" href="http://localhost:59877/posts/20190823t23/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>自宅ネットワークの不調を可視化</p>
+				</div>
+			</a>
+		
+			<a class="item" href="http://localhost:59877/posts/first-post/">
+				<div>
+					<i class="cocktail icon"></i>
+					<p>Hugoでブログ作成</p>
+				</div>
+			</a>
+		
+	</div>
+
+
+					</div>
+				</section>
+			
+		</div>
+
+		
+		<footer class="ui bottom attached center aligned inverted segment">
+			
+
+	<p>© 2019 - 2025 ブログ的な何か</p>
+
+
+<p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with <a href="https://github.com/UtkarshVerma/hugo-dream-plus" target="_blank">Dream Plus</a> theme.</p>
+
+		</footer>
+	</div>
+</div>
+
+		</div>
+
+		<div class="sixteen wide mobile fifteen wide tablet twelve wide computer column post-list">
+			
+			<section class="ui secondary top attached black segment post-head">
+				<h1 class="post-title">
+					社内の技術シンポジウム用スライド
+				</h1>
+
+				<div class="sub header">
+					<div><span><i class="calendar outline icon"></i>May 25, 2025</span></div>
+					
+					<div><span class="disqusComment"><i class="comment outline icon"></i><a href="http://localhost:59877/posts/20250525t20/#disqus_thread" class="disqus-comment-count" data-disqus-identifier="5889175459737532e6b52cab970a68dd"></a></span></div>
+					<div><span><i class="clock outline icon"></i>2 min read</span></div>
+					<div><span><i class="angle double up icon"></i>Last updated on May 25, 2025</span></div>
+				</div>
+				<hr>
+
+				
+					<div class="toc">
+						<nav id="TableOfContents">
+  <ul>
+    <li><a href="#要点">要点</a></li>
+    <li><a href="#生成-aiについて">生成 AIについて</a>
+      <ul>
+        <li><a href="#スライド作成の余談">スライド作成の余談</a></li>
+        <li><a href="#最近の生成-ai-活用例">最近の生成 AI 活用例</a></li>
+      </ul>
+    </li>
+    <li><a href="#おわりに">おわりに</a></li>
+  </ul>
+</nav>
+					</div>
+				
+
+				<article class="post-content twemoji">
+					<h2 id="要点">要点&nbsp;<a class="anchor" href="#要点"><i class="small linkify icon"></i></a> </h2>
+<p>2024 年末の社内技術シンポジウムで提出したスライド「<strong>AWS CDK によるプロビジョニング自動化</strong>」を公開します。</p>
+<ul>
+<li><strong>前半</strong>：自身のブログ記事 URL を生成 AI に渡し、<strong>人の手を一切入れず</strong>に作成したスライド。</li>
+<li><strong>後半</strong>：そのタネ明かしと、生成 AI に関する内容を私が手動で執筆したスライド。こちらが本命。<br>
+ちなみにこの発表は <strong>新人賞</strong> を頂きました。🎉<br>
+（ブログ掲載にあたり、タイトルスライドの個人情報は削除済みです。チーム名とありますが、ソロプレイヤーです…。）</li>
+</ul>
+<embed src="/images/20250525T20/2024_tech_sympo.pdf" width="100%" height="600px" type="application/pdf">
+<hr>
+<h2 id="生成-aiについて">生成 AIについて&nbsp;<a class="anchor" href="#生成-aiについて"><i class="small linkify icon"></i></a> </h2>
+<p>登場からわずか数年で、<strong>中学生でも名前を知るほど普及</strong>したのが生成 AI です。<br>
+技術革新と普及スピードがあまりに速いため、ここで紹介する内容もすぐ「当たり前」になるかもしれません。とはいえ、</p>
+<blockquote>
+<p><em>「当時、生成 AI でどこまで出来たのか」</em></p></blockquote>
+<p>を振り返る貴重な記録として残しておきます。今後はノウハウやアイデアがさらに蓄積され、「<strong>生成 AI をどう使いこなすか</strong>」が差別化要因になる時代です。取り残されないよう、柔軟に学び続けたいですね。</p>
+<p><img src="/images/20250525T20/gai_icons.png" alt="生成AI"></p>
+<hr>
+<h3 id="スライド作成の余談">スライド作成の余談&nbsp;<a class="anchor" href="#スライド作成の余談"><i class="small linkify icon"></i></a> </h3>
+<p>愛用の <strong>MacBook Air</strong> が故障していたため、やむなく Windows 用の <strong>古い無償 Office ソフト</strong>で作業しました。</p>
+<ul>
+<li>バージョンが古く <strong>頻繁にクラッシュ</strong></li>
+<li>レイアウトの <strong>微妙なズレ</strong> が多発</li>
+</ul>
+<p>正直つらかったですが、「<strong>道具はケチらない</strong>」という教訓になりました……。</p>
+<p>不具合に対する時間の浪費がスライド作りで一番時間がかかったところかもしれません！</p>
+<hr>
+<h3 id="最近の生成-ai-活用例">最近の生成 AI 活用例&nbsp;<a class="anchor" href="#最近の生成-ai-活用例"><i class="small linkify icon"></i></a> </h3>
+<p><strong>1. SQL の練習</strong></p>
+<ul>
+<li><strong>具体的な使い方</strong>
+<ul>
+<li>公開 DB「Sakila」を題材に、生成 AI に問題出題と解説を依頼</li>
+</ul>
+</li>
+<li><strong>メリット</strong>
+<ul>
+<li>DB情報を渡さなくても認識済み</li>
+<li>テンポ良く学習を進められる</li>
+</ul>
+</li>
+</ul>
+<p><strong>2. 資格勉強</strong></p>
+<ul>
+<li><strong>具体的な使い方</strong>
+<ul>
+<li>AWS 資格をプロジェクトとして設定し、本番レベルの問題を生成</li>
+</ul>
+</li>
+<li><strong>メリット</strong>
+<ul>
+<li>不明点はすぐ深掘り質問できる</li>
+<li>検索不要で高速学習が可能、気持ちいい！</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="おわりに">おわりに&nbsp;<a class="anchor" href="#おわりに"><i class="small linkify icon"></i></a> </h2>
+<p>社内技術シンポジウムで新人賞を獲得したスライドを紹介しました。当時も生成 AI はインパクト大でしたが、<strong>今この瞬間もアップデートが続いています</strong>。社会は生成 AI を中心に再構築されつつあり、私自身も変化に適応しながら成長を続けたいと思います。</p>
+<p>※この記事も草案を作成した後、ChatGPTのo3モデルに添削をしてもらいました。まとめて添削してもらったらだいぶスリムに、そして個性が消えました…！次からはもう少し小分けして添削してもらいます…。</p>
+<p>—</p>
+
+				</article>				
+			</section>
+
+			
+			<section class="ui secondary attached segment dream-tags">
+				
+					
+
+
+
+
+	
+		<a class="ui label green " href="/tags/chatgpt" title="chatgpt">chatgpt</a>
+	
+		<a class="ui label teal " href="/tags/aws" title="aws">aws</a>
+	
+
+
+				
+			</section>
+
+			
+			
+				<section class="ui secondary  attached segment share row box">
+					
+
+
+
+
+
+
+
+
+<div class="author">
+	
+	<img class="avatar" src="https://avatars1.githubusercontent.com/u/16427109?s=400&amp;v=4">
+	
+</div>
+<div class="info grow flexbox">
+	
+	<p class="name">ta08</p>
+	
+	<p class="desc">I&#39;m looking for ways to make the world more efficient and efficient. This blog aims to share my knowledge and what I had created.</p>
+</div>
+
+
+<div class="share row box">
+	<div class="sixteen wide mobile eight wide tablet four wide computer column">
+		<div class="facebook flexbox" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http:\/\/localhost:59877\/posts\/20250525t20\/','_self')">
+			<i class="facebook icon"></i>
+		</div>
+	</div>
+	<div class="sixteen wide mobile eight wide tablet four wide computer column">
+		<div class="twitter none flexbox" onclick="window.open('https://twitter.com/intent/tweet?text=Read &quot;社内の技術シンポジウム用スライド  http:\/\/localhost:59877\/posts\/20250525t20\/','_self')">
+			<i class="twitter icon"></i>
+		</div>
+	</div>
+	<div class="sixteen wide mobile eight wide tablet four wide computer column">
+		<div class="linkedin none flexbox" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url=http:\/\/localhost:59877\/posts\/20250525t20\/&title=社内の技術シンポジウム用スライド&summary=&source=ブログ的な何か','_self')">
+			<i class="linkedin icon"></i>
+		</div>
+	</div>
+	<div class="sixteen wide mobile eight wide tablet four wide computer column">
+		<div class="reddit none flexbox" onclick="window.open('https://reddit.com/submit?url=http:\/\/localhost:59877\/posts\/20250525t20\/&title=社内の技術シンポジウム用スライド','_self')">
+			<i class="reddit icon"></i>
+		</div>
+	</div>
+</div>
+
+				</section>
+			
+
+			
+			
+			
+
+			
+			
+				<div class="ui secondary bottom attached stacked segment disqus">
+					
+<div id="disqus_thread"></div>
+<script>
+	var disqus_config = function () {
+		this.page.url = 'http:\/\/localhost:59877\/posts\/20250525t20\/';
+		this.page.identifier = '5889175459737532e6b52cab970a68dd';
+	};
+	(function() {
+   	var d = document, s = d.createElement('script');
+   	s.src = 'https://' + 'dream-plus' + '.disqus.com/embed.js';
+   	s.setAttribute('data-timestamp', +new Date());
+   	(d.head || d.body).appendChild(s);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+				</div>
+			
+		</div>
+	</div>
+
+				</div>
+				<div class="back">
+					
+<nav class="ui top secondary menu bar">
+	<div class="item">
+		<i class="inverted big link bullseye icon dream-flip-toggle" title="About Me"></i>
+	</div>
+	
+	
+		<a class="item" href="E3OWVIN571QZ" target="_blank">
+			<i class="amazon icon"></i>
+		</a>
+	
+		<a class="item" href="ta08" target="_blank">
+			<i class="gist icon"></i>
+		</a>
+	
+		<a class="item" href="ta08" target="_blank">
+			<i class="github icon"></i>
+		</a>
+	
+</nav>
+
+
+
+<div class="ui centered grid about">
+	<div class="sixteen wide mobile fifteen wide tablet fifteen wide computer column about">
+		<section class="ui stacked segments">
+			<div class="ui inverted segment">
+				<article class="twemoji">
+					<h1 id="about-me-">About Me 🐝</h1>
+<p>👤 💓 🍕🍣🍰🍈.</p>
+<h2 id="as-a-software-engineer-">As a Software Engineer 🌸</h2>
+<p>I&rsquo;m a software engineer, spending the most time as a back-ends engineer.</p>
+<p>Speaking of programming languages, I have experiences with Scala, Java, Python, Typescript at work.</p>
+<p>But not only these programming languages, I have experiences with other programming languages in my private time.</p>
+<h2 id="education-">Education 🎓</h2>
+<ul>
+<li>Bachelor of Computer Science</li>
+<li>Master of Computer Science
+<ul>
+<li>especially NLP</li>
+</ul>
+</li>
+</ul>
+<h2 id="tech-interests-">Tech Interests ⭐✨✨</h2>
+<ul>
+<li>Natural Language Processing</li>
+<li>Functional Programming</li>
+<li>Automation</li>
+<li>Data Visualization</li>
+<li>Data Handling</li>
+<li>Rust</li>
+</ul>
+
+				</article>
+			</div>
+		</section>
+	</div>
+</div>
+
+				</div>
+			</div>
+		</div>
+		
+	
+	
+		<script id="dsq-count-scr" src="//dream-plus.disqus.com/count.js" async></script>
+	
+
+		
+
+<script src="/js/site.js"></script>
+
+
+
+	<script src="https://twemoji.maxcdn.com/2/twemoji.min.js?2.6"></script>
+
+
+
+
+
+
+
+
+
+		
+
+		
+
+	<script>
+		(function () {
+		  console.log("Twemoji up and making stuff colourful!");
+		  for (var b = document.getElementsByClassName("twemoji"), a = 0; a < b.length; a++) {
+			twemoji.parse(b[a]);
+		  }
+		})();
+	</script>
+
+
+	</body>
+</html>
